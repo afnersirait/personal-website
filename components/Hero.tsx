@@ -27,7 +27,7 @@ const Hero = () => {
 
           <div className="space-y-2 sm:space-y-3">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground leading-tight">
-              Hi, I'm <span className="text-primary">Afner Sirait</span>
+              Hi, I&apos;m <span className="text-primary">Afner Sirait</span>
             </h1>
             <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-muted-foreground">
               Data and DevOps Engineer

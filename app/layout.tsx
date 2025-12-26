@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -9,17 +9,18 @@ export const metadata: Metadata = {
   description: "Personal portfolio and resume website showcasing my work, skills, and experience.",
   keywords: ["portfolio", "resume", "cv", "developer", "designer"],
   authors: [{ name: "Afner Sirait" }],
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-    userScalable: true,
-  },
   openGraph: {
     title: "Afner Sirait - Portfolio & Resume",
     description: "Personal portfolio and resume website",
     type: "website",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
 };
 
 export default function RootLayout({

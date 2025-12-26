@@ -3,7 +3,20 @@ const nextConfig = {
   reactStrictMode: true,
   output: 'standalone', // Required for Docker deployment
   images: {
-    domains: ['images.unsplash.com', 'github.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'github.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
   },
 }
 

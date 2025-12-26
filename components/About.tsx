@@ -36,7 +36,7 @@ const About = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
             <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              I'm a passionate developer with a keen eye for design and a love for
+              I&apos;m a passionate developer with a keen eye for design and a love for
               creating exceptional digital experiences.
             </p>
           </div>
@@ -57,7 +57,7 @@ const About = () => {
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 I believe in continuous learning and staying up-to-date with the latest
-                technologies and best practices. When I'm not coding, you can find me
+                technologies and best practices. When I&apos;m not coding, you can find me
                 exploring new design trends, contributing to open-source projects, or
                 sharing knowledge with the developer community.
               </p>
