@@ -1,6 +1,6 @@
 "use client";
 
-import { Briefcase, GraduationCap, Award, BadgeCheck } from "lucide-react";
+import { Briefcase, GraduationCap, Award, BadgeCheck, Cloud, Database, Container, Users } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import DownloadResumeButton from "@/components/DownloadResumeButton";
@@ -68,6 +68,7 @@ const Resume = () => {
       date: "2023",
       credentialId: "AWS-CSA-123456",
       url: "https://aws.amazon.com/certification/",
+      icon: Cloud,
     },
     {
       name: "Google Cloud Professional Data Engineer",
@@ -75,6 +76,7 @@ const Resume = () => {
       date: "2023",
       credentialId: "GCP-PDE-789012",
       url: "https://cloud.google.com/certification",
+      icon: Database,
     },
     {
       name: "Certified Kubernetes Administrator (CKA)",
@@ -82,6 +84,7 @@ const Resume = () => {
       date: "2022",
       credentialId: "CKA-345678",
       url: "https://www.cncf.io/certification/cka/",
+      icon: Container,
     },
     {
       name: "Professional Scrum Master I",
@@ -89,6 +92,7 @@ const Resume = () => {
       date: "2022",
       credentialId: "PSM-901234",
       url: "https://www.scrum.org/",
+      icon: Users,
     },
   ];
 
@@ -202,38 +206,48 @@ const Resume = () => {
               <h3 className="text-3xl font-bold">Certifications</h3>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
-              {certifications.map((cert, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <CardTitle className="text-lg">{cert.name}</CardTitle>
-                    <p className="text-sm text-muted-foreground">{cert.issuer}</p>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-2">
-                      <div className="flex items-center justify-between text-sm">
-                        <span className="text-muted-foreground">Issued:</span>
-                        <span className="font-medium">{cert.date}</span>
-                      </div>
-                      {cert.credentialId && (
-                        <div className="flex items-center justify-between text-sm">
-                          <span className="text-muted-foreground">ID:</span>
-                          <span className="font-mono text-xs">{cert.credentialId}</span>
+              {certifications.map((cert, index) => {
+                const IconComponent = cert.icon;
+                return (
+                  <Card key={index} className="hover:shadow-lg transition-shadow">
+                    <CardHeader>
+                      <div className="flex items-start gap-3">
+                        <div className="p-2 bg-primary/10 rounded-lg">
+                          <IconComponent className="h-6 w-6 text-primary" />
                         </div>
-                      )}
-                      {cert.url && (
-                        <a
-                          href={cert.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center text-sm text-primary hover:underline mt-2"
-                        >
-                          View Certificate →
-                        </a>
-                      )}
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
+                        <div className="flex-1">
+                          <CardTitle className="text-lg">{cert.name}</CardTitle>
+                          <p className="text-sm text-muted-foreground">{cert.issuer}</p>
+                        </div>
+                      </div>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="space-y-2">
+                        <div className="flex items-center justify-between text-sm">
+                          <span className="text-muted-foreground">Issued:</span>
+                          <span className="font-medium">{cert.date}</span>
+                        </div>
+                        {cert.credentialId && (
+                          <div className="flex items-center justify-between text-sm">
+                            <span className="text-muted-foreground">ID:</span>
+                            <span className="font-mono text-xs">{cert.credentialId}</span>
+                          </div>
+                        )}
+                        {cert.url && (
+                          <a
+                            href={cert.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center text-sm text-primary hover:underline mt-2"
+                          >
+                            View Certificate →
+                          </a>
+                        )}
+                      </div>
+                    </CardContent>
+                  </Card>
+                );
+              })}
             </div>
           </div>
         </div>
