@@ -8,9 +8,9 @@ import DownloadResumeButton from "@/components/DownloadResumeButton";
 const Resume = () => {
   const experiences = [
     {
-      title: "Senior Full Stack Developer",
-      company: "Tech Company Inc.",
-      period: "2022 - Present",
+      title: "Data & DevOps Engineer",
+      company: "Feedloop.ai",
+      period: "2025 - Present",
       description:
         "Leading development of enterprise-scale web applications using React, Node.js, and cloud technologies. Mentoring junior developers and establishing best practices.",
       achievements: [
