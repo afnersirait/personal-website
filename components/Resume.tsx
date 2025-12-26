@@ -1,6 +1,6 @@
 "use client";
 
-import { Briefcase, GraduationCap, Award } from "lucide-react";
+import { Briefcase, GraduationCap, Award, BadgeCheck } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import DownloadResumeButton from "@/components/DownloadResumeButton";
@@ -52,12 +52,6 @@ const Resume = () => {
       period: "2014 - 2018",
       description: "Graduated with honors. Focus on software engineering and web technologies.",
     },
-    {
-      degree: "Professional Certifications",
-      institution: "Various Platforms",
-      period: "2018 - Present",
-      description: "AWS Certified Developer, Google Cloud Professional, React Advanced Patterns",
-    },
   ];
 
   const skills = {
@@ -66,6 +60,37 @@ const Resume = () => {
     "DevOps": ["Docker", "AWS", "CI/CD", "Kubernetes", "Git"],
     "Tools": ["Figma", "VS Code", "Postman", "Jira", "Slack"],
   };
+
+  const certifications = [
+    {
+      name: "AWS Certified Solutions Architect",
+      issuer: "Amazon Web Services",
+      date: "2023",
+      credentialId: "AWS-CSA-123456",
+      url: "https://aws.amazon.com/certification/",
+    },
+    {
+      name: "Google Cloud Professional Data Engineer",
+      issuer: "Google Cloud",
+      date: "2023",
+      credentialId: "GCP-PDE-789012",
+      url: "https://cloud.google.com/certification",
+    },
+    {
+      name: "Certified Kubernetes Administrator (CKA)",
+      issuer: "Cloud Native Computing Foundation",
+      date: "2022",
+      credentialId: "CKA-345678",
+      url: "https://www.cncf.io/certification/cka/",
+    },
+    {
+      name: "Professional Scrum Master I",
+      issuer: "Scrum.org",
+      date: "2022",
+      credentialId: "PSM-901234",
+      url: "https://www.scrum.org/",
+    },
+  ];
 
   return (
     <section id="resume" className="py-20 bg-background">
@@ -145,7 +170,7 @@ const Resume = () => {
           </div>
 
           {/* Skills Section */}
-          <div>
+          <div className="mb-16">
             <div className="flex items-center gap-3 mb-8">
               <Award className="h-8 w-8 text-primary" />
               <h3 className="text-3xl font-bold">Skills & Technologies</h3>
@@ -163,6 +188,48 @@ const Resume = () => {
                           {skill}
                         </Badge>
                       ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+
+          {/* Certifications Section */}
+          <div className="mb-16">
+            <div className="flex items-center gap-3 mb-8">
+              <BadgeCheck className="h-8 w-8 text-primary" />
+              <h3 className="text-3xl font-bold">Certifications</h3>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              {certifications.map((cert, index) => (
+                <Card key={index} className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="text-lg">{cert.name}</CardTitle>
+                    <p className="text-sm text-muted-foreground">{cert.issuer}</p>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-2">
+                      <div className="flex items-center justify-between text-sm">
+                        <span className="text-muted-foreground">Issued:</span>
+                        <span className="font-medium">{cert.date}</span>
+                      </div>
+                      {cert.credentialId && (
+                        <div className="flex items-center justify-between text-sm">
+                          <span className="text-muted-foreground">ID:</span>
+                          <span className="font-mono text-xs">{cert.credentialId}</span>
+                        </div>
+                      )}
+                      {cert.url && (
+                        <a
+                          href={cert.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center text-sm text-primary hover:underline mt-2"
+                        >
+                          View Certificate →
+                        </a>
+                      )}
                     </div>
                   </CardContent>
                 </Card>
