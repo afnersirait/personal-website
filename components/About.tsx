@@ -2,6 +2,7 @@
 
 import { Code, Palette, Rocket, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import ProfilePicture from "@/components/ProfilePicture";
 
 const About = () => {
   const features = [
@@ -42,6 +43,11 @@ const About = () => {
 
           <div className="grid md:grid-cols-2 gap-12 mb-16">
             <div className="space-y-6">
+              {/* Profile Picture for About Section */}
+              <div className="flex justify-center md:justify-start mb-6">
+                <ProfilePicture size="lg" animated={false} />
+              </div>
+              
               <h3 className="text-2xl font-semibold">Who I Am</h3>
               <p className="text-muted-foreground leading-relaxed">
                 With over X years of experience in web development, I specialize in

@@ -89,19 +89,41 @@ Replace placeholder images in the Portfolio section with your own project screen
 
 ## 🚀 Deployment
 
-### Vercel (Recommended)
+### Option 1: Vercel (Easiest)
 
 1. Push your code to GitHub
 2. Import your repository on [Vercel](https://vercel.com)
 3. Deploy with one click
 
-### Other Platforms
+### Option 2: Kubernetes (Production-Ready)
 
-This Next.js app can be deployed to:
+Deploy to any Kubernetes cluster with automated CI/CD:
+
+```bash
+# Quick deploy using script
+./scripts/deploy.sh
+
+# Or manually
+kubectl apply -f k8s/ -n personal-website
+```
+
+**Features**:
+- ✅ Automated CI/CD with GitHub Actions
+- ✅ Docker containerization
+- ✅ Horizontal Pod Autoscaling (2-10 replicas)
+- ✅ SSL/TLS certificates via cert-manager
+- ✅ NGINX Ingress Controller
+- ✅ Health checks and monitoring
+
+**See**: [KUBERNETES_DEPLOYMENT.md](KUBERNETES_DEPLOYMENT.md) for complete guide
+
+### Option 3: Other Platforms
+
+This Next.js app can also be deployed to:
 - [Netlify](https://www.netlify.com/)
 - [AWS Amplify](https://aws.amazon.com/amplify/)
 - [Railway](https://railway.app/)
-- Any platform that supports Next.js
+- Any platform that supports Next.js or Docker
 
 ## 📄 Project Structure
 

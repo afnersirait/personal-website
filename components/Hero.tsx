@@ -2,6 +2,8 @@
 
 import { ArrowDown, Github, Linkedin, Mail, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ProfilePicture from "@/components/ProfilePicture";
+import DownloadResumeButton from "@/components/DownloadResumeButton";
 
 const Hero = () => {
   const scrollToSection = (href: string) => {
@@ -18,6 +20,11 @@ const Hero = () => {
     >
       <div className="container mx-auto px-4 py-20">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
+          {/* Profile Picture */}
+          <div className="flex justify-center mb-8">
+            <ProfilePicture size="xl" animated={true} />
+          </div>
+
           <div className="space-y-4">
             <h1 className="text-5xl md:text-7xl font-bold text-foreground">
               Hi, I'm <span className="text-primary">Afner Sirait</span>
@@ -39,6 +46,7 @@ const Hero = () => {
               View My Work
               <ArrowDown className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform" />
             </Button>
+            <DownloadResumeButton size="lg" variant="default" />
             <Button
               size="lg"
               variant="outline"

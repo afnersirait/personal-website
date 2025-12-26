@@ -1,0 +1,97 @@
+name: Deploy to Kubernetes
+
+on:
+  workflow_run:
+    workflows: ["Build and Push Docker Image"]
+    types:
+      - completed
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to deploy to'
+        required: true
+        default: 'production'
+        type: choice
+        options:
+          - production
+          - staging
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up kubectl
+        uses: azure/setup-kubectl@v3
+        with:
+          version: 'latest'
+
+      - name: Configure kubectl
+        run: |
+          mkdir -p $HOME/.kube
+          echo "${{ secrets.KUBECONFIG }}" | base64 -d > $HOME/.kube/config
+          chmod 600 $HOME/.kube/config
+
+      - name: Verify cluster connection
+        run: |
+          kubectl cluster-info
+          kubectl get nodes
+
+      - name: Create namespace if not exists
+        run: |
+          kubectl create namespace personal-website --dry-run=client -o yaml | kubectl apply -f -
+
+      - name: Create image pull secret
+        run: |
+          kubectl create secret docker-registry ghcr-secret \
+            --docker-server=${{ env.REGISTRY }} \
+            --docker-username=${{ github.actor }} \
+            --docker-password=${{ secrets.GITHUB_TOKEN }} \
+            --namespace=personal-website \
+            --dry-run=client -o yaml | kubectl apply -f -
+
+      - name: Update deployment image
+        run: |
+          kubectl set image deployment/personal-website \
+            personal-website=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest \
+            --namespace=personal-website \
+            --record
+
+      - name: Apply Kubernetes manifests
+        run: |
+          kubectl apply -f k8s/deployment.yaml --namespace=personal-website
+          kubectl apply -f k8s/ingress.yaml --namespace=personal-website
+          kubectl apply -f k8s/hpa.yaml --namespace=personal-website
+
+      - name: Wait for deployment rollout
+        run: |
+          kubectl rollout status deployment/personal-website \
+            --namespace=personal-website \
+            --timeout=5m
+
+      - name: Verify deployment
+        run: |
+          kubectl get pods --namespace=personal-website -l app=personal-website
+          kubectl get svc --namespace=personal-website
+          kubectl get ingress --namespace=personal-website
+
+      - name: Get deployment info
+        run: |
+          echo "=== Deployment Status ==="
+          kubectl describe deployment personal-website --namespace=personal-website
+          echo ""
+          echo "=== Pod Status ==="
+          kubectl get pods --namespace=personal-website -l app=personal-website -o wide
+          echo ""
+          echo "=== Service Status ==="
+          kubectl describe svc personal-website --namespace=personal-website

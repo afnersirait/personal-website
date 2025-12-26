@@ -3,6 +3,7 @@
 import { Briefcase, GraduationCap, Award } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import DownloadResumeButton from "@/components/DownloadResumeButton";
 
 const Resume = () => {
   const experiences = [
@@ -73,9 +74,10 @@ const Resume = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Resume</h2>
             <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
               My professional journey, education, and technical expertise.
             </p>
+            <DownloadResumeButton size="lg" variant="default" />
           </div>
 
           {/* Experience Section */}
