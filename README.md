@@ -1,182 +1,394 @@
 # Personal Website - CV/Resume & Portfolio
 
-A modern, responsive personal website built with Next.js, React, TypeScript, and TailwindCSS. This website serves as a professional CV/Resume and Portfolio platform to showcase your skills, experience, and projects.
+A modern, professional, and fully responsive personal website built with Next.js 14, React, TypeScript, and TailwindCSS. Showcases your skills, experience, and projects with a clean, elegant design optimized for all devices.
+
+![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue?style=flat-square&logo=typescript)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-38bdf8?style=flat-square&logo=tailwindcss)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
 ## ✨ Features
 
-- **Modern Design**: Clean, professional, and visually appealing UI
-- **Fully Responsive**: Optimized for all devices (mobile, tablet, desktop)
-- **Smooth Animations**: Engaging animations and transitions
-- **SEO Optimized**: Built-in SEO best practices with Next.js
-- **Fast Performance**: Optimized for speed and performance
-- **Easy to Customize**: Well-structured code for easy customization
+### **Core Features**
+- 🎨 **Professional Design**: Clean, modern UI with professional teal-blue color scheme
+- 📱 **Fully Responsive**: Mobile-first design optimized for all devices (320px - 4K)
+- ⚡ **Fast Performance**: Optimized for speed with Next.js 14 App Router
+- 🎭 **Smooth Animations**: Elegant transitions and micro-interactions
+- ♿ **Accessible**: WCAG 2.1 compliant with ARIA labels and semantic HTML
+- 🔍 **SEO Optimized**: Meta tags, Open Graph, and semantic structure
 
-## 🚀 Sections
+### **Special Features**
+- 📄 **Resume Download**: One-click CV/Resume download with visual feedback
+- 🖼️ **Profile Picture**: Animated gradient border with elegant display
+- 📧 **Contact Form**: Ready-to-integrate contact form
+- 🌓 **Dark Mode Ready**: Dark mode color scheme included
+- 🚀 **Production Ready**: Docker & Kubernetes deployment configurations
 
-1. **Hero Section**: Eye-catching introduction with social links
-2. **About Section**: Personal introduction and skills overview
-3. **Resume Section**: 
-   - Work experience with achievements
+## 📋 Sections
+
+1. **🏠 Hero Section**
+   - Animated profile picture with gradient border
+   - Professional introduction
+   - Call-to-action buttons (View Work, Download Resume, Contact)
+   - Social media links (GitHub, LinkedIn, Email)
+
+2. **👤 About Section**
+   - Personal introduction
+   - Skills with visual progress bars
+   - Key features and highlights
+   - Profile picture display
+
+3. **📄 Resume Section**
+   - Work experience timeline with achievements
    - Education history
-   - Skills and technologies
-4. **Portfolio Section**: Project showcase with images and descriptions
-5. **Contact Section**: Contact form and contact information
-6. **Footer**: Quick links and social media connections
+   - Technical skills categorized
+   - **Download Resume button** with visual feedback
+
+4. **💼 Portfolio Section**
+   - Project showcase with images
+   - Project descriptions and tech stack
+   - GitHub and live demo links
+   - Responsive grid layout
+
+5. **📧 Contact Section**
+   - Contact form (ready for integration)
+   - Contact information
+   - Social media links
+   - Location and email
+
+6. **🔗 Footer**
+   - Quick navigation links
+   - Social media connections
+   - Copyright information
 
 ## 🛠️ Tech Stack
 
-- **Framework**: [Next.js 14](https://nextjs.org/)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: [TailwindCSS](https://tailwindcss.com/)
-- **UI Components**: Custom components with shadcn/ui patterns
+### **Core Technologies**
+- **Framework**: [Next.js 14](https://nextjs.org/) with App Router
+- **Language**: [TypeScript 5.3](https://www.typescriptlang.org/)
+- **Styling**: [TailwindCSS 3.4](https://tailwindcss.com/)
+- **UI Library**: Custom components with [shadcn/ui](https://ui.shadcn.com/) patterns
 - **Icons**: [Lucide React](https://lucide.dev/)
-- **Animations**: Framer Motion & TailwindCSS animations
+- **Animations**: TailwindCSS animations + custom keyframes
 
-## 📦 Installation
+### **Development Tools**
+- **Package Manager**: npm
+- **Linting**: ESLint with Next.js config
+- **CSS Processing**: PostCSS with Autoprefixer
+- **Type Checking**: TypeScript strict mode
 
-1. **Clone the repository**:
-   ```bash
-   git clone <your-repo-url>
-   cd personal-website
-   ```
+### **Deployment**
+- **Containerization**: Docker with multi-stage builds
+- **Orchestration**: Kubernetes with HPA
+- **CI/CD**: GitHub Actions
+- **Hosting**: Vercel, Kubernetes, or any Node.js platform
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+## 🚀 Quick Start
 
-3. **Run the development server**:
-   ```bash
-   npm run dev
-   ```
+### **Prerequisites**
+- Node.js 18+ and npm
+- Git
 
-4. **Open your browser**:
-   Navigate to [http://localhost:3000](http://localhost:3000)
+### **Installation**
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/afnersirait/personal-website.git
+cd personal-website
+
+# 2. Install dependencies
+npm install
+
+# 3. Run development server
+npm run dev
+
+# 4. Open browser
+# Navigate to http://localhost:3000
+```
+
+### **First Steps**
+1. Add your profile picture to `public/images/profile.jpg`
+2. Add your resume PDF to `public/resume/Afner_Sirait_Resume.pdf`
+3. Update personal information in components
+4. Customize colors in `app/globals.css`
+
+See [QUICKSTART.md](guideline/QUICKSTART.md) for detailed setup guide.
 
 ## 🎨 Customization
 
-### Personal Information
+### **Quick Customization**
 
-Update the following files with your information:
+**1. Profile Picture**
+```bash
+# Add your photo (recommended: 400x400px, JPG/PNG)
+public/images/profile.jpg
+```
+See [PROFILE_PICTURE_GUIDE.md](guideline/PROFILE_PICTURE_GUIDE.md)
 
-1. **app/layout.tsx**: Update metadata (title, description, etc.)
-2. **components/Navigation.tsx**: Update your name
-3. **components/Hero.tsx**: Update name, title, description, and social links
-4. **components/About.tsx**: Update about text and skills
-5. **components/Resume.tsx**: Update work experience, education, and skills
-6. **components/Portfolio.tsx**: Update projects with your own
-7. **components/Contact.tsx**: Update contact information
-8. **components/Footer.tsx**: Update footer information
+**2. Resume/CV**
+```bash
+# Add your resume PDF
+public/resume/Afner_Sirait_Resume.pdf
+```
+See [RESUME_DOWNLOAD_GUIDE.md](guideline/RESUME_DOWNLOAD_GUIDE.md)
 
-### Styling
+**3. Personal Information**
+Update these components:
+- `components/Hero.tsx` - Name, title, bio, social links
+- `components/About.tsx` - About text, skills
+- `components/Resume.tsx` - Experience, education, skills
+- `components/Portfolio.tsx` - Projects
+- `components/Contact.tsx` - Contact info
+- `components/Footer.tsx` - Footer details
 
-- **Colors**: Modify `app/globals.css` to change the color scheme
-- **Fonts**: Update `app/layout.tsx` to use different Google Fonts
-- **Layout**: Adjust component layouts in their respective files
+**4. Color Scheme**
+```css
+/* app/globals.css */
+--primary: 199 89% 48%;  /* Professional teal-blue */
+--secondary: 210 40% 96%; /* Light gray */
+```
+See [DESIGN_SYSTEM.md](guideline/DESIGN_SYSTEM.md)
 
-### Images
+**5. Metadata**
+```typescript
+// app/layout.tsx
+export const metadata = {
+  title: "Your Name - Portfolio",
+  description: "Your description",
+  // ...
+}
+```
 
-Replace placeholder images in the Portfolio section with your own project screenshots. You can:
-- Use local images in the `public` folder
-- Use external URLs (Unsplash, your own hosting, etc.)
+### **Detailed Guides**
+- 📋 [Customization Checklist](guideline/CUSTOMIZATION_CHECKLIST.md)
+- 🎨 [Design System](guideline/DESIGN_SYSTEM.md)
+- 📱 [Mobile Responsive Guide](guideline/MOBILE_RESPONSIVE_GUIDE.md)
 
 ## 📝 Available Scripts
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm start` - Start production server
-- `npm run lint` - Run ESLint
+```bash
+npm run dev      # Start development server (http://localhost:3000)
+npm run build    # Build for production
+npm start        # Start production server
+npm run lint     # Run ESLint for code quality
+```
 
 ## 🚀 Deployment
 
-### Option 1: Vercel (Easiest)
+### **Option 1: Vercel (Recommended - Easiest)**
 
-1. Push your code to GitHub
-2. Import your repository on [Vercel](https://vercel.com)
-3. Deploy with one click
-
-### Option 2: Kubernetes (Production-Ready)
-
-Deploy to any Kubernetes cluster with automated CI/CD:
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/afnersirait/personal-website)
 
 ```bash
-# Quick deploy using script
+# 1. Push to GitHub
+git push origin main
+
+# 2. Import on Vercel
+# Visit https://vercel.com and import your repo
+
+# 3. Deploy automatically
+# Vercel will auto-deploy on every push
+```
+
+**Features:**
+- ✅ Automatic deployments
+- ✅ Global CDN
+- ✅ SSL certificates
+- ✅ Preview deployments
+- ✅ Analytics
+
+### **Option 2: Kubernetes (Production-Grade)**
+
+Full production deployment with Docker and Kubernetes:
+
+```bash
+# Quick deploy
 ./scripts/deploy.sh
 
-# Or manually
+# Or manual deployment
 kubectl apply -f k8s/ -n personal-website
 ```
 
-**Features**:
-- ✅ Automated CI/CD with GitHub Actions
-- ✅ Docker containerization
-- ✅ Horizontal Pod Autoscaling (2-10 replicas)
-- ✅ SSL/TLS certificates via cert-manager
-- ✅ NGINX Ingress Controller
-- ✅ Health checks and monitoring
+**Features:**
+- ✅ Docker multi-stage builds
+- ✅ Kubernetes manifests (Deployment, Service, Ingress, HPA)
+- ✅ GitHub Actions CI/CD
+- ✅ Auto-scaling (2-10 replicas)
+- ✅ SSL/TLS with cert-manager
+- ✅ Health checks & monitoring
 
-**See**: [KUBERNETES_DEPLOYMENT.md](KUBERNETES_DEPLOYMENT.md) for complete guide
+**Guides:**
+- 📘 [Kubernetes Deployment Guide](guideline/KUBERNETES_DEPLOYMENT.md)
+- 🚀 [Kubernetes Quickstart](guideline/KUBERNETES_QUICKSTART.md)
 
-### Option 3: Other Platforms
+### **Option 3: Docker**
 
-This Next.js app can also be deployed to:
-- [Netlify](https://www.netlify.com/)
-- [AWS Amplify](https://aws.amazon.com/amplify/)
-- [Railway](https://railway.app/)
-- Any platform that supports Next.js or Docker
+```bash
+# Build image
+docker build -t personal-website .
+
+# Run container
+docker run -p 3000:3000 personal-website
+```
+
+### **Option 4: Other Platforms**
+
+- **Netlify**: Drag & drop or Git integration
+- **AWS Amplify**: Full-stack deployment
+- **Railway**: One-click deployment
+- **Render**: Auto-deploy from Git
+- **DigitalOcean App Platform**: Managed deployment
 
 ## 📄 Project Structure
 
 ```
 personal-website/
-├── app/
-│   ├── globals.css       # Global styles
-│   ├── layout.tsx        # Root layout
-│   └── page.tsx          # Home page
-├── components/
-│   ├── ui/               # Reusable UI components
-│   │   ├── button.tsx
-│   │   ├── card.tsx
-│   │   └── badge.tsx
-│   ├── Navigation.tsx    # Navigation bar
-│   ├── Hero.tsx          # Hero section
-│   ├── About.tsx         # About section
-│   ├── Resume.tsx        # Resume section
-│   ├── Portfolio.tsx     # Portfolio section
-│   ├── Contact.tsx       # Contact section
-│   └── Footer.tsx        # Footer
+├── app/                          # Next.js 14 App Router
+│   ├── globals.css              # Global styles & CSS variables
+│   ├── layout.tsx               # Root layout with metadata
+│   └── page.tsx                 # Home page (main entry)
+│
+├── components/                   # React components
+│   ├── ui/                      # Reusable UI components
+│   │   ├── button.tsx           # Button component
+│   │   ├── card.tsx             # Card components
+│   │   └── badge.tsx            # Badge component
+│   ├── Navigation.tsx           # Header navigation with mobile menu
+│   ├── Hero.tsx                 # Hero section with CTA
+│   ├── About.tsx                # About section with skills
+│   ├── Resume.tsx               # Resume/CV section
+│   ├── Portfolio.tsx            # Projects showcase
+│   ├── Contact.tsx              # Contact form & info
+│   ├── Footer.tsx               # Footer with links
+│   ├── ProfilePicture.tsx       # Animated profile picture
+│   └── DownloadResumeButton.tsx # Resume download button
+│
 ├── lib/
-│   └── utils.ts          # Utility functions
-├── public/               # Static assets
-├── package.json
-├── tailwind.config.ts
-├── tsconfig.json
-└── README.md
+│   └── utils.ts                 # Utility functions (cn, etc.)
+│
+├── public/                       # Static assets
+│   ├── images/                  # Images folder
+│   │   ├── profile.jpg          # Your profile picture
+│   │   ├── profile.webp         # Optimized profile picture
+│   │   └── README.md            # Image optimization guide
+│   └── resume/                  # Resume folder
+│       ├── Afner_Sirait_Resume.pdf  # Your resume PDF
+│       └── README.md            # Resume setup guide
+│
+├── guideline/                    # Documentation
+│   ├── CUSTOMIZATION_CHECKLIST.md
+│   ├── DESIGN_SYSTEM.md
+│   ├── KUBERNETES_DEPLOYMENT.md
+│   ├── KUBERNETES_QUICKSTART.md
+│   ├── MOBILE_RESPONSIVE_GUIDE.md
+│   ├── PROFILE_PICTURE_GUIDE.md
+│   ├── PROJECT_SUMMARY.md
+│   ├── QUICKSTART.md
+│   ├── RESUME_DOWNLOAD_GUIDE.md
+│   └── SETUP.md
+│
+├── k8s/                          # Kubernetes manifests
+│   ├── deployment.yaml          # Deployment & Service
+│   ├── ingress.yaml             # Ingress configuration
+│   ├── hpa.yaml                 # Horizontal Pod Autoscaler
+│   └── README.md                # K8s quick reference
+│
+├── scripts/                      # Deployment scripts
+│   ├── deploy.sh                # Quick deploy script
+│   └── cleanup.sh               # Cleanup script
+│
+├── .github/workflows/            # GitHub Actions
+│   ├── docker-build-push.yml    # Docker CI/CD
+│   ├── deploy-k8s.yml           # Kubernetes deployment
+│   └── README.md                # Workflows guide
+│
+├── Dockerfile                    # Docker configuration
+├── .dockerignore                 # Docker ignore file
+├── next.config.js                # Next.js configuration
+├── tailwind.config.ts            # TailwindCSS configuration
+├── tsconfig.json                 # TypeScript configuration
+├── postcss.config.js             # PostCSS configuration
+├── package.json                  # Dependencies & scripts
+└── README.md                     # This file
 ```
 
-## 🎯 Best Practices Implemented
+## 🎯 Best Practices
 
-- **Component-based architecture**: Modular and reusable components
-- **TypeScript**: Type-safe code for better development experience
-- **Responsive design**: Mobile-first approach
-- **Accessibility**: Semantic HTML and ARIA labels
-- **Performance**: Optimized images and code splitting
-- **SEO**: Meta tags and semantic structure
-- **Clean code**: Well-organized and documented
+### **Code Quality**
+- ✅ **TypeScript**: Full type safety
+- ✅ **ESLint**: Code linting and formatting
+- ✅ **Component Architecture**: Modular and reusable
+- ✅ **Clean Code**: Well-organized and documented
+
+### **Performance**
+- ✅ **Next.js 14**: Latest App Router for optimal performance
+- ✅ **Image Optimization**: Next.js Image component
+- ✅ **Code Splitting**: Automatic route-based splitting
+- ✅ **CSS Optimization**: TailwindCSS with PurgeCSS
+
+### **Responsive Design**
+- ✅ **Mobile-First**: Optimized for mobile devices
+- ✅ **Touch-Friendly**: 44px minimum touch targets
+- ✅ **Breakpoints**: sm (640px), md (768px), lg (1024px), xl (1280px)
+- ✅ **Viewport**: Proper meta viewport configuration
+
+### **Accessibility**
+- ✅ **Semantic HTML**: Proper HTML5 elements
+- ✅ **ARIA Labels**: Screen reader support
+- ✅ **Keyboard Navigation**: Full keyboard accessibility
+- ✅ **Color Contrast**: WCAG 2.1 AA compliant
+
+### **SEO**
+- ✅ **Meta Tags**: Title, description, keywords
+- ✅ **Open Graph**: Social media sharing
+- ✅ **Semantic Structure**: Proper heading hierarchy
+- ✅ **Fast Loading**: Optimized for Core Web Vitals
+
+## 📚 Documentation
+
+### **Setup & Customization**
+- 🚀 [Quick Start Guide](guideline/QUICKSTART.md)
+- 📋 [Customization Checklist](guideline/CUSTOMIZATION_CHECKLIST.md)
+- 🛠️ [Setup Guide](guideline/SETUP.md)
+- 📊 [Project Summary](guideline/PROJECT_SUMMARY.md)
+
+### **Features**
+- �️ [Profile Picture Guide](guideline/PROFILE_PICTURE_GUIDE.md)
+- 📄 [Resume Download Guide](guideline/RESUME_DOWNLOAD_GUIDE.md)
+- 🎨 [Design System](guideline/DESIGN_SYSTEM.md)
+- 📱 [Mobile Responsive Guide](guideline/MOBILE_RESPONSIVE_GUIDE.md)
+
+### **Deployment**
+- ☸️ [Kubernetes Deployment](guideline/KUBERNETES_DEPLOYMENT.md)
+- 🚀 [Kubernetes Quickstart](guideline/KUBERNETES_QUICKSTART.md)
+- 🐳 [Docker Configuration](Dockerfile)
+- ⚙️ [GitHub Actions](.github/workflows/README.md)
 
 ## 📧 Contact Form Integration
 
-The contact form is currently set up with a basic submit handler. To make it functional, you can integrate with:
+The contact form is ready for integration. Choose your preferred service:
 
-- [Formspree](https://formspree.io/)
-- [EmailJS](https://www.emailjs.com/)
-- [SendGrid](https://sendgrid.com/)
-- [Resend](https://resend.com/)
-- Your own backend API
+**Recommended Services:**
+- **[Formspree](https://formspree.io/)** - Easy setup, free tier
+- **[EmailJS](https://www.emailjs.com/)** - Client-side email sending
+- **[Resend](https://resend.com/)** - Modern email API
+- **[SendGrid](https://sendgrid.com/)** - Enterprise-grade
+- **Custom API** - Build your own backend
+
+**Integration Steps:**
+1. Choose a service
+2. Get API key
+3. Update `components/Contact.tsx`
+4. Add environment variables
+5. Test the form
 
 ## 🤝 Contributing
 
-Feel free to fork this project and customize it for your own use. If you find any bugs or have suggestions, please open an issue.
+Contributions are welcome! Feel free to:
+- 🐛 Report bugs
+- 💡 Suggest features
+- 🔧 Submit pull requests
+- 📖 Improve documentation
 
 ## 📜 License
 
@@ -184,10 +396,18 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🙏 Acknowledgments
 
-- Design inspiration from modern portfolio websites
-- Built with amazing open-source tools and libraries
-- Icons by [Lucide](https://lucide.dev/)
-- Images from [Unsplash](https://unsplash.com/)
+- **Design**: Inspired by modern portfolio websites
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **UI Patterns**: [shadcn/ui](https://ui.shadcn.com/)
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [TailwindCSS](https://tailwindcss.com/)
+
+## 📞 Support
+
+Need help? Check out:
+- 📖 [Documentation](guideline/)
+- 🐛 [Issues](https://github.com/afnersirait/personal-website/issues)
+- 💬 [Discussions](https://github.com/afnersirait/personal-website/discussions)
 
 ---
 
