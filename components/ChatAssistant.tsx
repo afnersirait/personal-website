@@ -97,23 +97,23 @@ export function ChatAssistant() {
       <Button
         onClick={() => setIsOpen(!isOpen)}
         size="icon"
-        className={`fixed bottom-6 right-6 h-14 w-14 rounded-full shadow-lg transition-all duration-300 z-50 ${
+        className={`fixed bottom-4 right-4 sm:bottom-6 sm:right-6 h-12 w-12 sm:h-14 sm:w-14 rounded-full shadow-lg transition-all duration-300 z-50 ${
           isOpen ? "scale-0" : "scale-100"
         }`}
         aria-label="Open chat assistant"
       >
-        <MessageCircle className="h-6 w-6" />
+        <MessageCircle className="h-5 w-5 sm:h-6 sm:w-6" />
       </Button>
 
       {/* Chat Window */}
       <div
-        className={`fixed bottom-6 right-6 w-[380px] h-[600px] bg-background border-2 border-border rounded-2xl shadow-2xl transition-all duration-300 z-50 flex flex-col ${
+        className={`fixed bottom-0 right-0 left-0 sm:bottom-6 sm:right-6 sm:left-auto w-full sm:w-[380px] h-[85vh] sm:h-[600px] bg-background border-t-2 sm:border-2 border-border sm:rounded-2xl shadow-2xl transition-all duration-300 z-50 flex flex-col ${
           isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"
         }`}
         style={{ transformOrigin: "bottom right" }}
       >
         {/* Header */}
-        <div className="flex items-center justify-between p-4 border-b border-border bg-primary/5 rounded-t-2xl">
+        <div className="flex items-center justify-between p-4 border-b border-border bg-primary/5 sm:rounded-t-2xl">
           <div className="flex items-center gap-3">
             <div className="relative">
               <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">

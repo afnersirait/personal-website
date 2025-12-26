@@ -18,10 +18,10 @@ const Hero = () => {
       id="home"
       className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/30 to-cyan-50/20 dark:from-black dark:via-slate-950 dark:to-black"
     >
-      <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+      <div className="container mx-auto px-4 sm:px-6 py-12 sm:py-12">
         <div className="max-w-4xl mx-auto text-center space-y-4 sm:space-y-5 animate-fade-in">
           {/* Profile Picture */}
-          <div className="flex justify-center mb-3 sm:mb-4">
+          <div className="flex justify-center mb-6 sm:mb-4">
             <ProfilePicture size="lg" animated={true} />
           </div>
 
