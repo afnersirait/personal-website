@@ -38,7 +38,7 @@ const ProfilePicture = ({
       {/* Animated ring effect */}
       {animated && showBorder && (
         <div
-          className={`absolute inset-0 ${sizeClasses[size]} rounded-full bg-gradient-to-r from-primary via-purple-500 to-pink-500 animate-spin-slow opacity-75 blur-sm`}
+          className={`absolute inset-0 ${sizeClasses[size]} rounded-full bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-400 animate-spin-slow opacity-60 blur-sm`}
         ></div>
       )}
 
@@ -47,7 +47,7 @@ const ProfilePicture = ({
         {/* Border ring */}
         {showBorder && (
           <div
-            className={`absolute inset-0 ${sizeClasses[size]} rounded-full bg-gradient-to-br from-primary to-purple-600 p-1`}
+            className={`absolute inset-0 ${sizeClasses[size]} rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 p-1`}
           >
             <div className="w-full h-full rounded-full bg-background"></div>
           </div>
@@ -59,7 +59,7 @@ const ProfilePicture = ({
             showBorder ? "p-1" : ""
           } ${animated ? "hover:scale-105 transition-transform duration-300" : ""}`}
         >
-          <div className="relative w-full h-full rounded-full overflow-hidden bg-gradient-to-br from-primary/20 to-purple-600/20 shadow-2xl">
+          <div className="relative w-full h-full rounded-full overflow-hidden bg-gradient-to-br from-blue-500/15 to-cyan-500/15 shadow-2xl">
             {hasProfileImage ? (
               <Image
                 src="/images/profile.jpg" // Your profile image path
@@ -71,9 +71,9 @@ const ProfilePicture = ({
               />
             ) : (
               // Placeholder with elegant icon
-              <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/10 to-purple-600/10">
+              <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-500/10 to-cyan-500/10">
                 <User
-                  className="text-primary/50"
+                  className="text-blue-500/50"
                   size={iconSizes[size]}
                   strokeWidth={1.5}
                 />
@@ -86,8 +86,8 @@ const ProfilePicture = ({
       {/* Decorative elements */}
       {animated && (
         <>
-          <div className="absolute -top-2 -right-2 w-4 h-4 bg-primary rounded-full animate-pulse"></div>
-          <div className="absolute -bottom-2 -left-2 w-3 h-3 bg-purple-500 rounded-full animate-pulse delay-300"></div>
+          <div className="absolute -top-2 -right-2 w-4 h-4 bg-blue-500 rounded-full animate-pulse"></div>
+          <div className="absolute -bottom-2 -left-2 w-3 h-3 bg-cyan-500 rounded-full animate-pulse delay-300"></div>
         </>
       )}
     </div>

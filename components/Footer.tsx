@@ -13,7 +13,7 @@ const Footer = () => {
             <div>
               <h3 className="text-xl font-bold mb-4">Afner Sirait</h3>
               <p className="text-muted-foreground">
-                AI&Data Analyst and DevOps Engineer passionate about creating
+                Data and DevOps Engineer passionate about creating
                 beautiful and functional web experiences.
               </p>
             </div>
@@ -104,8 +104,7 @@ const Footer = () => {
           <div className="pt-8 border-t border-border text-center">
             <p className="text-muted-foreground flex items-center justify-center gap-2">
               © {currentYear} Afner Sirait. Made with{" "}
-              <Heart className="h-4 w-4 text-red-500 fill-red-500" /> using
-              Next.js & TailwindCSS
+              <Heart className="h-4 w-4 text-red-500 fill-red-500" />
             </p>
           </div>
         </div>
