@@ -20,8 +20,9 @@ A modern, professional, and fully responsive personal website built with Next.js
 ### **Special Features**
 - 📄 **Resume Download**: One-click CV/Resume download with visual feedback
 - 🖼️ **Profile Picture**: Animated gradient border with elegant display
+- 🌓 **Theme Switcher**: Toggle between Default (Light) and Night (Dark) themes
+- 🤖 **AI Chat Assistant**: Interactive FAQ chatbot to answer visitor questions
 - 📧 **Contact Form**: Ready-to-integrate contact form
-- 🌓 **Dark Mode Ready**: Dark mode color scheme included
 - 🚀 **Production Ready**: Docker & Kubernetes deployment configurations
 
 ## 📋 Sections
@@ -60,6 +61,13 @@ A modern, professional, and fully responsive personal website built with Next.js
    - Quick navigation links
    - Social media connections
    - Copyright information
+
+7. **🤖 Chat Assistant**
+   - Floating chat button (bottom-right)
+   - Interactive FAQ chatbot
+   - 20+ pre-defined questions & answers
+   - Instant responses about background, skills, contact info
+   - Theme-aware design
 
 ## 🛠️ Tech Stack
 
@@ -132,7 +140,22 @@ public/resume/Afner_Sirait_Resume.pdf
 ```
 See [RESUME_DOWNLOAD_GUIDE.md](guideline/RESUME_DOWNLOAD_GUIDE.md)
 
-**3. Personal Information**
+**3. Theme Switcher**
+Toggle between light and dark themes:
+- Click sun/moon icon in navigation
+- Preference saved automatically
+- Works on all devices
+
+See [THEME_GUIDE.md](guideline/THEME_GUIDE.md)
+
+**4. Chat Assistant FAQs**
+```typescript
+// lib/faqData.ts
+// Add or modify FAQ questions and answers
+```
+See [CHAT_ASSISTANT_GUIDE.md](guideline/CHAT_ASSISTANT_GUIDE.md)
+
+**5. Personal Information**
 Update these components:
 - `components/Hero.tsx` - Name, title, bio, social links
 - `components/About.tsx` - About text, skills
@@ -140,8 +163,9 @@ Update these components:
 - `components/Portfolio.tsx` - Projects
 - `components/Contact.tsx` - Contact info
 - `components/Footer.tsx` - Footer details
+- `lib/faqData.ts` - Chat assistant FAQs
 
-**4. Color Scheme**
+**6. Color Scheme**
 ```css
 /* app/globals.css */
 --primary: 199 89% 48%;  /* Professional teal-blue */
@@ -149,7 +173,7 @@ Update these components:
 ```
 See [DESIGN_SYSTEM.md](guideline/DESIGN_SYSTEM.md)
 
-**5. Metadata**
+**7. Metadata**
 ```typescript
 // app/layout.tsx
 export const metadata = {
@@ -163,6 +187,8 @@ export const metadata = {
 - 📋 [Customization Checklist](guideline/CUSTOMIZATION_CHECKLIST.md)
 - 🎨 [Design System](guideline/DESIGN_SYSTEM.md)
 - 📱 [Mobile Responsive Guide](guideline/MOBILE_RESPONSIVE_GUIDE.md)
+- 🌓 [Theme Guide](guideline/THEME_GUIDE.md)
+- 🤖 [Chat Assistant Guide](guideline/CHAT_ASSISTANT_GUIDE.md)
 
 ## 📝 Available Scripts
 
@@ -261,10 +287,14 @@ personal-website/
 │   ├── Contact.tsx              # Contact form & info
 │   ├── Footer.tsx               # Footer with links
 │   ├── ProfilePicture.tsx       # Animated profile picture
-│   └── DownloadResumeButton.tsx # Resume download button
+│   ├── DownloadResumeButton.tsx # Resume download button
+│   ├── ThemeProvider.tsx        # Theme context provider
+│   ├── ThemeToggle.tsx          # Theme switcher button
+│   └── ChatAssistant.tsx        # FAQ chatbot component
 │
 ├── lib/
-│   └── utils.ts                 # Utility functions (cn, etc.)
+│   ├── utils.ts                 # Utility functions (cn, etc.)
+│   └── faqData.ts               # Chat assistant FAQ data
 │
 ├── public/                       # Static assets
 │   ├── images/                  # Images folder
@@ -276,6 +306,7 @@ personal-website/
 │       └── README.md            # Resume setup guide
 │
 ├── guideline/                    # Documentation
+│   ├── CHAT_ASSISTANT_GUIDE.md  # Chat assistant documentation
 │   ├── CUSTOMIZATION_CHECKLIST.md
 │   ├── DESIGN_SYSTEM.md
 │   ├── KUBERNETES_DEPLOYMENT.md
@@ -285,7 +316,8 @@ personal-website/
 │   ├── PROJECT_SUMMARY.md
 │   ├── QUICKSTART.md
 │   ├── RESUME_DOWNLOAD_GUIDE.md
-│   └── SETUP.md
+│   ├── SETUP.md
+│   └── THEME_GUIDE.md           # Theme switcher documentation
 │
 ├── k8s/                          # Kubernetes manifests
 │   ├── deployment.yaml          # Deployment & Service
@@ -353,8 +385,10 @@ personal-website/
 - 📊 [Project Summary](guideline/PROJECT_SUMMARY.md)
 
 ### **Features**
-- �️ [Profile Picture Guide](guideline/PROFILE_PICTURE_GUIDE.md)
+- 🖼️ [Profile Picture Guide](guideline/PROFILE_PICTURE_GUIDE.md)
 - 📄 [Resume Download Guide](guideline/RESUME_DOWNLOAD_GUIDE.md)
+- 🌓 [Theme Switcher Guide](guideline/THEME_GUIDE.md)
+- 🤖 [Chat Assistant Guide](guideline/CHAT_ASSISTANT_GUIDE.md)
 - 🎨 [Design System](guideline/DESIGN_SYSTEM.md)
 - 📱 [Mobile Responsive Guide](guideline/MOBILE_RESPONSIVE_GUIDE.md)
 
