@@ -7,16 +7,16 @@ This directory contains CI/CD workflows for automated building and deployment.
 ### 1. Build and Push Docker Image
 **File**: `docker-build-push.yml`
 
-Automatically builds and pushes Docker images to GitHub Container Registry.
+Automatically builds and pushes Docker images to GitHub Container Registry when a new release is created.
 
 **Triggers**:
-- Push to `main` branch
-- Pull requests
-- Git tags (e.g., `v1.0.0`)
+- **Release created/published** (primary trigger)
+- **Manual trigger** via workflow_dispatch
 
 **Outputs**:
 - Docker image: `ghcr.io/afnersirait/personal-website:latest`
-- Tagged versions for releases
+- Semantic versioned tags (e.g., `v1.0.0`, `v1.0`, `v1`)
+- Multi-platform support (linux/amd64, linux/arm64)
 
 ### 2. Deploy to Kubernetes
 **File**: `deploy-k8s.yml`
@@ -51,15 +51,34 @@ Add these secrets:
 
 ## 🚀 Usage
 
-### Automatic Deployment
-1. Push code to `main` branch
-2. GitHub Actions will:
-   - Build Docker image
-   - Push to GHCR
-   - Deploy to Kubernetes
-   - Verify deployment
+### Creating a Release (Triggers Build)
+1. **Create a new release on GitHub**:
+   ```bash
+   # Via GitHub CLI
+   gh release create v1.0.0 --title "Release v1.0.0" --notes "Release notes"
+   
+   # Or via GitHub web interface:
+   # Repository → Releases → Draft a new release
+   # - Tag: v1.0.0
+   # - Title: Release v1.0.0
+   # - Description: Release notes
+   # - Click "Publish release"
+   ```
 
-### Manual Deployment
+2. **GitHub Actions will automatically**:
+   - Build Docker image
+   - Tag with semantic versions (v1.0.0, v1.0, v1, latest)
+   - Push to GitHub Container Registry
+   - Generate build attestation
+
+### Manual Build (Without Release)
+1. Go to Actions tab
+2. Select "Build and Push Docker Image"
+3. Click "Run workflow"
+4. Select branch
+5. Click "Run workflow"
+
+### Manual Kubernetes Deployment
 1. Go to Actions tab
 2. Select "Deploy to Kubernetes"
 3. Click "Run workflow"
