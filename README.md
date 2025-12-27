@@ -416,35 +416,6 @@ The contact form is ready for integration. Choose your preferred service:
 4. Add environment variables
 5. Test the form
 
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-- 🐛 Report bugs
-- 💡 Suggest features
-- 🔧 Submit pull requests
-- 📖 Improve documentation
-
-## 📜 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🙏 Acknowledgments
-
-- **Design**: Inspired by modern portfolio websites
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **UI Patterns**: [shadcn/ui](https://ui.shadcn.com/)
-- **Framework**: [Next.js](https://nextjs.org/)
-- **Styling**: [TailwindCSS](https://tailwindcss.com/)
-
-## 📞 Support
-
-Need help? Check out:
-- 📖 [Documentation](guideline/)
-- 🐛 [Issues](https://github.com/afnersirait/personal-website/issues)
-- 💬 [Discussions](https://github.com/afnersirait/personal-website/discussions)
-
----
-
 **Made with ❤️**
 
 Happy coding! 🚀
