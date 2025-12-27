@@ -4,6 +4,7 @@ import { ArrowDown, Github, Linkedin, Mail, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ProfilePicture from "@/components/ProfilePicture";
 import DownloadResumeButton from "@/components/DownloadResumeButton";
+import TypingAnimation from "@/components/TypingAnimation";
 
 const Hero = () => {
   const scrollToSection = (href: string) => {
@@ -26,8 +27,15 @@ const Hero = () => {
           </div>
 
           <div className="space-y-2 sm:space-y-3">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground leading-tight">
-              Hi, I&apos;m <span className="text-primary">Afner Sirait</span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground leading-tight min-h-[1.2em]">
+              <TypingAnimation 
+                text="Hi, I'm Afner Sirait" 
+                className="text-foreground"
+                speed={10}
+                delay={50}
+                highlightText="Afner Sirait"
+                highlightClassName="text-primary"
+              />
             </h1>
             <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-muted-foreground">
               Data and DevOps Engineer
