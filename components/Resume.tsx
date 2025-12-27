@@ -133,12 +133,12 @@ const Resume = () => {
       level: 85,
     },
     {
-      name: "Indonesian",
+      name: "Indonesian (Bahasa Indonesia)",
       proficiency: "Native or Bilingual Proficiency",
       level: 100,
     },
     {
-      name: "Japan",
+      name: "Japanese (Nihongo - 日本語)",
       proficiency: "Elementary Proficiency",
       level: 40,
     },
