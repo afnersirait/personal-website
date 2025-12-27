@@ -101,14 +101,6 @@ const Resume = () => {
       icon: Cloud,
     },
     {
-      name: "Google Cloud Professional Data Engineer",
-      issuer: "Google Cloud",
-      date: "2023",
-      credentialId: "GCP-PDE-789012",
-      url: "https://cloud.google.com/certification",
-      icon: Database,
-    },
-    {
       name: "Microsoft Azure Fundamentals",
       issuer: "Microsoft",
       date: "2024",
