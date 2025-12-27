@@ -1,6 +1,6 @@
 # Personal Website - CV/Resume & Portfolio
 
-A modern, professional, and fully responsive personal website built with Next.js 14, React, TypeScript, and TailwindCSS. Showcases your skills, experience, and projects with a clean, elegant design optimized for all devices.
+A modern, professional, and fully responsive personal website built with Next.js 14, React, TypeScript, and TailwindCSS. Showcases Afner's skills, experience, and projects with a clean, elegant design optimized for all devices.
 
 ![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue?style=flat-square&logo=typescript)
