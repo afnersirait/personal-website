@@ -35,8 +35,8 @@ const About = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
             <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              I&apos;m a passionate developer with a keen eye for design and a love for
-              creating exceptional digital experiences.
+              I&apos;m a passionate engineer with a keen eye for data and a love for
+              creating impactful solutions.
             </p>
           </div>
 
@@ -45,15 +45,15 @@ const About = () => {
               <h3 className="text-2xl font-semibold">Who I Am</h3>
               <p className="text-muted-foreground leading-relaxed">
                 With over 2+ years of experience in software engineering, I specialize in
-                building modern, responsive, and user-friendly applications. My journey
+                building modern, and reliable data analytics system. My journey
                 in tech started with a curiosity about how things work, which evolved
                 into a passion for creating solutions that make a difference.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 I believe in continuous learning and staying up-to-date with the latest
                 technologies and best practices. When I&apos;m not coding, you can find me
-                exploring new design trends, contributing to open-source projects, or
-                sharing knowledge with the developer community.
+                exploring new data technology trends, contributing to open-source projects, or
+                sharing knowledge with others.
               </p>
             </div>
 
