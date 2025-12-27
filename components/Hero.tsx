@@ -31,8 +31,8 @@ const Hero = () => {
               <TypingAnimation 
                 text="Hi, I'm Afner Sirait" 
                 className="text-foreground"
-                speed={10}
-                delay={50}
+                speed={5}
+                delay={10}
                 highlightText="Afner Sirait"
                 highlightClassName="text-primary"
               />
