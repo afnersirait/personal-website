@@ -44,7 +44,7 @@ const About = () => {
             <div className="space-y-6">
               <h3 className="text-2xl font-semibold">Who I Am</h3>
               <p className="text-muted-foreground leading-relaxed">
-                With over X years of experience in web development, I specialize in
+                With over 2+ years of experience in software engineering, I specialize in
                 building modern, responsive, and user-friendly applications. My journey
                 in tech started with a curiosity about how things work, which evolved
                 into a passion for creating solutions that make a difference.

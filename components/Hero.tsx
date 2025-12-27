@@ -41,7 +41,8 @@ const Hero = () => {
               Data and DevOps Engineer
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-2 sm:px-0">
-              Data & DevOps Engineer with 2+ years of experience in data architecture, ETL pipelines, analytics, and DevOps. Engineering graduate from Universitas Gadjah Mada. Currently AI & Data Analyst at Feedloop.ai, focused on solving problems and creating impactful data solutions.
+              2+ years of experience in Data Architecture, ETL pipelines, Analytics, and DevOps. Engineering graduate from Universitas Gadjah Mada. 
+              Currently working as AI & Data Analyst at Feedloop.ai.
             </p>
           </div>
 

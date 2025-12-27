@@ -8,62 +8,92 @@ import DownloadResumeButton from "@/components/DownloadResumeButton";
 const Resume = () => {
   const experiences = [
     {
-      title: "Data & DevOps Engineer",
+      title: "AI & Data Analyst",
       company: "Feedloop.ai",
-      period: "2025 - Present",
+      period: "Sep 2025 - Present",
       description:
-        "Leading development of enterprise-scale web applications using React, Node.js, and cloud technologies. Mentoring junior developers and establishing best practices.",
+        "Responsible for designing data architecture, developing data pipelines, building data models, and performing analytical workflows to support data-driven decision-making. Ensure data quality, security, and compliance across data processes and systems.",
       achievements: [
-        "Improved application performance by 40%",
-        "Led team of 5 developers",
-        "Implemented CI/CD pipeline",
+        "Designed and implemented data architecture aligned with business requirements and best practices.",
+        "Collected, cleaned, and analyzed datasets to generate actionable insights for product and business decision-making.",
+        "Designed and developed data models to support analytical needs and reporting.",
+        "Developed end-to-end data pipelines for automated extraction, transformation, and loading processes.",
+        "Implemented and maintained data quality standards, ensuring integrity, security, and compliance with organizational and regulatory requirements.",
       ],
     },
     {
-      title: "Full Stack Developer",
-      company: "Digital Solutions Ltd.",
-      period: "2020 - 2022",
+      title: "DevOps Engineer",
+      company: "Feedloop.ai",
+      period: "Jun 2025 - Oct 2025",
       description:
-        "Developed and maintained multiple client projects using modern web technologies. Collaborated with designers and product managers to deliver high-quality solutions.",
+        "Responsible for managing and optimizing cloud infrastructure and deployment workflows, ensuring system reliability, scalability, and security. Supported development teams through automation and CI/CD implementation to streamline product delivery and operational efficiency.",
       achievements: [
-        "Delivered 15+ successful projects",
-        "Reduced bug reports by 60%",
-        "Introduced automated testing",
+        "Troubleshot and resolved infrastructure and application issues to maintain system performance and stability.",
+        "Managed containerized applications using Docker and Kubernetes (GKE/EKS/AKS), ensuring high availability and scalability.",
+        "Collaborated with development teams to optimize build, test, and release workflows, improving deployment velocity.",
+        "Managed secrets and security policies, ensuring safe and compliant operations in production environments.",
+        "Designed, implemented, and maintained CI/CD pipelines using modern automation tools to enhance deployment efficiency.",
       ],
     },
     {
-      title: "Frontend Developer",
-      company: "Startup Ventures",
-      period: "2018 - 2020",
+      title: "AI & Data Analyst",
+      company: "Deloitte Consulting SEA",
+      period: "Jan 2023 - Jun 2025",
       description:
-        "Built responsive and interactive user interfaces for various web applications. Focused on creating exceptional user experiences.",
+        "Worked across multiple enterprise-level projects as a Data Engineer, Business Analyst, and DevOps Engineer. Involved in building large-scale data pipelines, developing ELT frameworks, designing analytical systems, and supporting cloud/on-premise infrastructure. Delivered solutions for major property, credit scoring, and banking companies in Indonesia.",
       achievements: [
-        "Increased user engagement by 35%",
-        "Optimized load times by 50%",
-        "Implemented responsive design system",
+        "Conducted reverse engineering of the existing Customer-360 Dashboard pipeline built on Azure Synapse & Azure Data Factory.",
+        "Designed target-state end-to-end data pipeline architecture to modernize the analytical ecosystem.",
+        "Developed new end-to-end ELT pipelines in Microsoft Fabric utilizing multi-layer architecture: Bronze: Raw ingestion, Silver: Cleansed & standardized data, Gold: Data warehouse & data mart",
+        "Built and implemented orchestration system & data quality framework to maintain data reliability.",
+        "Conducted data transformation and pipeline testing for accuracy and performance validation.",
+        "Performed data & system exploration for new scoring engine development.",
+        "Analyzed business logic requirements for integration into the scoring engine.",
+        "Designed Entity Relationship Diagram (ERD) for the new scoring engine database.",
+        "Conducted data preparation, validation, and test execution to ensure correctness & business alignment.",
+        "Configured servers based on new scoring engine specifications.",
+        "Installed on-premise Kubernetes cluster including Container-D, Docker, ETCD, NFS, HA PostgreSQL+Patroni, and HA Proxy.",
+        "Deployed SAS Viya 4 on Kubernetes and integrated supporting components.",
+        "Implemented logging & monitoring platform using Prometheus, Grafana & OpenSearch.",
+        "Designed & implemented CI/CD pipelines using Jenkins, Docker, and GitLab.",
+        "Provided troubleshooting support for Kubernetes and SAS Viya backend systems.",
+        "Developed ETL pipelines in SAP HANA using Stored Procedures, Flow Graphs & Calculation Views to support business analytics dashboards.",
+      ],
+    },
+    {
+      title: "AI & Data Analyst Intern",
+      company: "Deloitte Consulting SEA",
+      period: "May 2022 - Jul 2022",
+      description:
+        "Supported data migration and validation activities for enterprise systems, focusing on database migration from on-premise to cloud environments. Learned and applied data analysis techniques using Excel, Python, and SQL.",
+      achievements: [
+        "Utilized Microsoft Excel and Python for data cleansing, preprocessing, and exploratory analysis.",
+        "Learned and assisted in Stored Procedure migration from PostgreSQL (AWS) to Snowflake environment.",
+        "Performed data validation using SQL to compare and synchronize logic between on-premise SQL Server and Snowflake migrated databases.",
       ],
     },
   ];
 
   const education = [
     {
-      degree: "Bachelor of Science in Computer Science",
-      institution: "University Name",
-      period: "2014 - 2018",
-      description: "Graduated with honors. Focus on software engineering and web technologies.",
+      degree: "Bachelor of Engineering in Electrical Engineering",
+      institution: "Universitas Gadjah Mada",
+      period: "2018 - 2022",
+      description: "Graduated with Cum Laude. Focus on Control and Instrumentation engineering, AI&Data Analytics Engineering.",
     },
   ];
 
   const skills = {
-    "Frontend": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vue.js"],
-    "Backend": ["Node.js", "Express", "Python", "PostgreSQL", "MongoDB"],
-    "DevOps": ["Docker", "AWS", "CI/CD", "Kubernetes", "Git"],
-    "Tools": ["Figma", "VS Code", "Postman", "Jira", "Slack"],
+    "Programming Languages": ["SQL", "Python", "YAML", "Bash/Shell"],
+    "Data:": ["Azure Data Factory", "Microsoft Fabric", "Prefect", "DLT Hub", "SAP HANA DB", "PostgreDB", "MySQLDB", "AWS Redshift", "PowerBI"],
+    "DevOps": ["Kubernetes", "Docker", "Container-D", "Jenkins", "GitLab", "Github", "Azure DevOps"],
+    "Analysis": ["Ms. Excel", "Google Collab", "PowerBI", "Ms. Power Point", "Ms. Word"],
+    "Project Management": ["Notion", "Ms. Teams", "Azure DevOps"],
   };
 
   const certifications = [
     {
-      name: "AWS Certified Solutions Architect",
+      name: "AWS Cloud Practitioner",
       issuer: "Amazon Web Services",
       date: "2023",
       credentialId: "AWS-CSA-123456",
@@ -79,17 +109,17 @@ const Resume = () => {
       icon: Database,
     },
     {
-      name: "Certified Kubernetes Administrator (CKA)",
-      issuer: "Cloud Native Computing Foundation",
-      date: "2022",
+      name: "Microsoft Azure Fundamentals",
+      issuer: "Microsoft",
+      date: "2024",
       credentialId: "CKA-345678",
       url: "https://www.cncf.io/certification/cka/",
       icon: Container,
     },
     {
-      name: "Professional Scrum Master I",
-      issuer: "Scrum.org",
-      date: "2022",
+      name: "Google Cloud Generative AI Specialist",
+      issuer: "Google",
+      date: "2024",
       credentialId: "PSM-901234",
       url: "https://www.scrum.org/",
       icon: Users,
@@ -108,7 +138,7 @@ const Resume = () => {
       level: 100,
     },
     {
-      name: "Mandarin",
+      name: "Japan",
       proficiency: "Elementary Proficiency",
       level: 40,
     },
