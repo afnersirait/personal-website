@@ -65,12 +65,20 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio" className="py-20 bg-secondary/20">
+    <section id="portfolio" className="py-20 bg-gradient-to-b from-background via-secondary/10 to-background relative overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-1/4 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 left-10 w-80 h-80 bg-teal-500/5 rounded-full blur-3xl"></div>
+      </div>
+      
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Portfolio</h2>
-            <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
+          <div className="text-center mb-16 animate-fade-in-up">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-cyan-500 to-teal-500 bg-clip-text text-transparent">
+              Portfolio
+            </h2>
+            <div className="w-20 h-1 bg-gradient-to-r from-primary via-cyan-500 to-teal-500 mx-auto mb-6 rounded-full"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               A selection of my recent projects showcasing my skills and expertise.
             </p>
@@ -80,7 +88,7 @@ const Portfolio = () => {
             {projects.map((project, index) => (
               <Card
                 key={index}
-                className="overflow-hidden group hover:shadow-xl transition-all duration-300 border-none"
+                className="overflow-hidden group hover:shadow-2xl transition-all duration-300 border-none hover:-translate-y-2 bg-gradient-to-br from-background to-secondary/20"
               >
                 <div className="relative overflow-hidden h-48">
                   <Image

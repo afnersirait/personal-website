@@ -28,12 +28,20 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-secondary/20">
+    <section id="about" className="py-20 bg-gradient-to-b from-secondary/10 via-secondary/5 to-background relative overflow-hidden">
+      {/* Decorative background elements */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl"></div>
+      </div>
+      
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
-            <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
+          <div className="text-center mb-16 animate-fade-in-up">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-cyan-500 to-teal-500 bg-clip-text text-transparent">
+              About Me
+            </h2>
+            <div className="w-20 h-1 bg-gradient-to-r from-primary via-cyan-500 to-teal-500 mx-auto mb-6 rounded-full"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               I&apos;m a passionate engineer with a keen eye for data and a love for
               creating impactful solutions.
@@ -104,14 +112,14 @@ const About = () => {
             {features.map((feature, index) => (
               <Card
                 key={index}
-                className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300 bg-background"
+                className={`border-none shadow-lg hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-background to-secondary/20 hover:-translate-y-2 group animate-scale-in stagger-${index + 1}`}
               >
                 <CardContent className="p-6 text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 text-primary mb-4">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary/20 to-cyan-500/20 text-primary mb-4 group-hover:scale-110 transition-transform duration-300 group-hover:rotate-6">
                     <feature.icon className="h-8 w-8" />
                   </div>
-                  <h4 className="text-xl font-semibold mb-2">{feature.title}</h4>
-                  <p className="text-muted-foreground">{feature.description}</p>
+                  <h4 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">{feature.title}</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{feature.description}</p>
                 </CardContent>
               </Card>
             ))}

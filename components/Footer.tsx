@@ -13,8 +13,7 @@ const Footer = () => {
             <div>
               <h3 className="text-xl font-bold mb-4">Afner Sirait</h3>
               <p className="text-muted-foreground">
-                Data and DevOps Engineer passionate about creating
-                beautiful and functional web experiences.
+                Data and DevOps Engineer passionate about turning data into value while ensuring seamless automation and system reliability.
               </p>
             </div>
 

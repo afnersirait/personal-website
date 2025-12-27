@@ -145,12 +145,20 @@ const Resume = () => {
   ];
 
   return (
-    <section id="resume" className="py-20 bg-background">
+    <section id="resume" className="py-20 bg-gradient-to-b from-background via-secondary/5 to-background relative overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-40 right-20 w-80 h-80 bg-primary/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-40 left-20 w-96 h-96 bg-teal-500/5 rounded-full blur-3xl"></div>
+      </div>
+      
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Resume</h2>
-            <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
+          <div className="text-center mb-16 animate-fade-in-up">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-cyan-500 to-teal-500 bg-clip-text text-transparent">
+              Resume
+            </h2>
+            <div className="w-20 h-1 bg-gradient-to-r from-primary via-cyan-500 to-teal-500 mx-auto mb-6 rounded-full"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
               My professional journey, education, and technical expertise.
             </p>
@@ -165,7 +173,7 @@ const Resume = () => {
             </div>
             <div className="space-y-6">
               {experiences.map((exp, index) => (
-                <Card key={index} className="border-l-4 border-l-primary">
+                <Card key={index} className="border-l-4 border-l-primary hover:shadow-xl transition-all duration-300 hover:-translate-x-1 bg-gradient-to-r from-background to-secondary/10 group">
                   <CardHeader>
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
                       <div>
