@@ -1,6 +1,6 @@
 "use client";
 
-import { Briefcase, GraduationCap, Award, BadgeCheck, Cloud, Database, Container, Users } from "lucide-react";
+import { Briefcase, GraduationCap, Award, BadgeCheck, Cloud, Database, Container, Users, Languages } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import DownloadResumeButton from "@/components/DownloadResumeButton";
@@ -93,6 +93,24 @@ const Resume = () => {
       credentialId: "PSM-901234",
       url: "https://www.scrum.org/",
       icon: Users,
+    },
+  ];
+
+  const languages = [
+    {
+      name: "English",
+      proficiency: "Professional Working Proficiency",
+      level: 85,
+    },
+    {
+      name: "Indonesian",
+      proficiency: "Native or Bilingual Proficiency",
+      level: 100,
+    },
+    {
+      name: "Mandarin",
+      proficiency: "Elementary Proficiency",
+      level: 40,
     },
   ];
 
@@ -248,6 +266,38 @@ const Resume = () => {
                   </Card>
                 );
               })}
+            </div>
+          </div>
+
+          {/* Languages Section */}
+          <div className="mb-16">
+            <div className="flex items-center gap-3 mb-8">
+              <Languages className="h-8 w-8 text-primary" />
+              <h3 className="text-3xl font-bold">Languages</h3>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {languages.map((language, index) => (
+                <Card key={index} className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="text-xl">{language.name}</CardTitle>
+                    <p className="text-sm text-muted-foreground">{language.proficiency}</p>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-2">
+                      <div className="flex justify-between text-sm">
+                        <span className="text-muted-foreground">Proficiency</span>
+                        <span className="font-semibold text-primary">{language.level}%</span>
+                      </div>
+                      <div className="w-full bg-secondary rounded-full h-2.5 overflow-hidden">
+                        <div
+                          className="bg-primary h-full rounded-full transition-all duration-500"
+                          style={{ width: `${language.level}%` }}
+                        ></div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
           </div>
         </div>

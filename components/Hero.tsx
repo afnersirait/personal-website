@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/30 to-cyan-50/20 dark:from-black dark:via-slate-950 dark:to-black"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-blue-50 via-cyan-50 to-teal-50 dark:from-slate-950 dark:via-blue-950/50 dark:to-teal-950/30"
     >
       <div className="container mx-auto px-4 sm:px-6 py-12 sm:py-12">
         <div className="max-w-4xl mx-auto text-center space-y-4 sm:space-y-5 animate-fade-in">
@@ -106,9 +106,18 @@ const Hero = () => {
 
       {/* Animated Background Elements */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-blue-200/10 to-cyan-200/10 dark:from-blue-500/5 dark:to-cyan-500/5 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-cyan-200/10 to-teal-200/10 dark:from-cyan-500/5 dark:to-teal-500/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 right-1/3 w-64 h-64 bg-gradient-to-br from-slate-200/8 to-blue-200/8 dark:from-slate-500/3 dark:to-blue-500/3 rounded-full blur-2xl animate-pulse"></div>
+        {/* Large gradient orb - top left */}
+        <div className="absolute -top-24 -left-24 w-96 h-96 bg-gradient-to-br from-blue-400/20 via-cyan-400/15 to-transparent dark:from-blue-500/10 dark:via-cyan-500/8 dark:to-transparent rounded-full blur-3xl animate-pulse"></div>
+        
+        {/* Large gradient orb - bottom right */}
+        <div className="absolute -bottom-24 -right-24 w-[500px] h-[500px] bg-gradient-to-tl from-teal-400/20 via-cyan-400/15 to-transparent dark:from-teal-500/10 dark:via-cyan-500/8 dark:to-transparent rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        
+        {/* Medium gradient orb - center */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-gradient-to-br from-cyan-300/15 via-blue-300/10 to-transparent dark:from-cyan-400/8 dark:via-blue-400/6 dark:to-transparent rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+        
+        {/* Small accent orbs */}
+        <div className="absolute top-1/4 right-1/4 w-48 h-48 bg-gradient-to-br from-blue-300/20 to-transparent dark:from-blue-400/10 dark:to-transparent rounded-full blur-2xl animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute bottom-1/3 left-1/3 w-56 h-56 bg-gradient-to-br from-teal-300/20 to-transparent dark:from-teal-400/10 dark:to-transparent rounded-full blur-2xl animate-pulse" style={{ animationDelay: '1.5s' }}></div>
       </div>
     </section>
   );
