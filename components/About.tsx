@@ -7,13 +7,13 @@ const About = () => {
   const features = [
     {
       icon: Code,
-      title: "Clean Code",
-      description: "Writing maintainable, scalable, and efficient code is my priority.",
+      title: "DevOps",
+      description: "Ensuring smooth deployment, automation, and system reliability through CI/CD and scalable infrastructure.",
     },
     {
       icon: Palette,
-      title: "Creative Design",
-      description: "Crafting beautiful and intuitive user interfaces that users love.",
+      title: "Data Analytics",
+      description: "Turning raw data into meaningful insights through analysis, visualization, and actionable reporting.",
     },
     {
       icon: Rocket,
@@ -62,7 +62,7 @@ const About = () => {
               <div className="space-y-4">
                 <div>
                   <div className="flex justify-between mb-2">
-                    <span className="font-medium">Frontend Development</span>
+                    <span className="font-medium">Data Engineering and Analytics</span>
                     <span className="text-muted-foreground">90%</span>
                   </div>
                   <div className="h-2 bg-secondary rounded-full overflow-hidden">
@@ -71,7 +71,7 @@ const About = () => {
                 </div>
                 <div>
                   <div className="flex justify-between mb-2">
-                    <span className="font-medium">Backend Development</span>
+                    <span className="font-medium">DevOps & Infrastructure</span>
                     <span className="text-muted-foreground">85%</span>
                   </div>
                   <div className="h-2 bg-secondary rounded-full overflow-hidden">
@@ -80,7 +80,7 @@ const About = () => {
                 </div>
                 <div>
                   <div className="flex justify-between mb-2">
-                    <span className="font-medium">UI/UX Design</span>
+                    <span className="font-medium">Analyst</span>
                     <span className="text-muted-foreground">80%</span>
                   </div>
                   <div className="h-2 bg-secondary rounded-full overflow-hidden">
@@ -89,7 +89,7 @@ const About = () => {
                 </div>
                 <div>
                   <div className="flex justify-between mb-2">
-                    <span className="font-medium">DevOps & Cloud</span>
+                    <span className="font-medium">Project Management</span>
                     <span className="text-muted-foreground">75%</span>
                   </div>
                   <div className="h-2 bg-secondary rounded-full overflow-hidden">
