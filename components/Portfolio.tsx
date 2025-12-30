@@ -23,8 +23,8 @@ const Portfolio = () => {
         "A collaborative task management application with real-time updates, team collaboration features, and analytics dashboard.",
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
       tags: ["Next.js", "TypeScript", "PostgreSQL", "WebSocket"],
-      github: "https://github.com/yourusername/project2",
-      demo: "https://demo-project2.com",
+      github: "https://github.com/afnersirait/task-management-app.git",
+      // demo: "https://demo-project2.com",
     },
     {
       title: "Social Media Dashboard",
