@@ -14,8 +14,8 @@ const Portfolio = () => {
         "A full-featured e-commerce platform with product management, shopping cart, and secure payment integration.",
       image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop",
       tags: ["React", "Node.js", "MongoDB", "Stripe"],
-      github: "https://github.com/yourusername/project1",
-      demo: "https://demo-project1.com",
+      github: "https://github.com/afnersirait/ecommerce-platform.git",
+      // demo: "https://demo-project1.com",
     },
     {
       title: "Task Management App",
