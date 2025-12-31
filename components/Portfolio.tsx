@@ -32,8 +32,8 @@ const Portfolio = () => {
         "Analytics dashboard for social media management with data visualization, scheduling, and engagement tracking.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
       tags: ["Vue.js", "Python", "D3.js", "Redis"],
-      github: "https://github.com/yourusername/project3",
-      demo: "https://demo-project3.com",
+      github: "https://github.com/afnersirait/social-media-dashboard.git",
+      // demo: "https://demo-project3.com",
     },
     {
       title: "AI Content Generator",
