@@ -1,420 +1,191 @@
-# Personal Website - CV/Resume & Portfolio
+# Afner Sirait - Personal Portfolio Website
 
-A modern, professional, and fully responsive personal website built with Next.js 14, React, TypeScript, and TailwindCSS. Showcases Afner's skills, experience, and projects with a clean, elegant design optimized for all devices.
+Hey there! 👋 I'm Afner Sirait, an AI & Data Analyst at Feedloop.ai. This is my personal portfolio website where I showcase my journey in data engineering, DevOps, and analytics.
+
+Built this from scratch using modern web technologies to demonstrate my technical skills and share my professional experience. Feel free to explore and reach out if you'd like to connect!
 
 ![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue?style=flat-square&logo=typescript)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-38bdf8?style=flat-square&logo=tailwindcss)
+![React](https://img.shields.io/badge/React-18-61dafb?style=flat-square&logo=react)
 
-## ✨ Features
+## 🚀 What's Inside
 
-### **Core Features**
-- 🎨 **Professional Design**: Clean, modern UI with professional teal-blue color scheme
-- 📱 **Fully Responsive**: Mobile-first design optimized for all devices (320px - 4K)
-- ⚡ **Fast Performance**: Optimized for speed with Next.js 14 App Router
-- 🎭 **Smooth Animations**: Elegant transitions and micro-interactions
-- ♿ **Accessible**: WCAG 2.1 compliant with ARIA labels and semantic HTML
-- 🔍 **SEO Optimized**: Meta tags, Open Graph, and semantic structure
+I built this portfolio to be more than just a static resume - it's a fully interactive experience that showcases my technical capabilities:
 
-### **Special Features**
-- 📄 **Resume Download**: One-click CV/Resume download with visual feedback
-- 🖼️ **Profile Picture**: Animated gradient border with elegant display
-- 🌓 **Theme Switcher**: Toggle between Default (Light) and Night (Dark) themes
-- 🤖 **AI Chat Assistant**: Interactive FAQ chatbot to answer visitor questions
-- 📧 **Contact Form**: Ready-to-integrate contact form
-- 🚀 **Production Ready**: Docker & Kubernetes deployment configurations
+### **Key Highlights**
+- � **Modern Design**: Clean, professional UI with beautiful gradient effects and animations
+- � **Mobile-First**: Works perfectly on any device - phone, tablet, or desktop
+- ⚡ **Lightning Fast**: Built with Next.js 14 for optimal performance
+- 🤖 **AI-Powered Chat**: Integrated Google Gemini AI to answer questions about my background
+- 🌓 **Dark Mode**: Toggle between light and dark themes
+- 📄 **Interactive Resume**: Downloadable CV with detailed work experience and skills
+- 🎭 **Smooth Animations**: Entrance animations and hover effects for better UX
+- � **SEO Ready**: Optimized for search engines and social media sharing
 
-## 📋 Sections
+## 📋 What You'll Find
 
-1. **🏠 Hero Section**
-   - Animated profile picture with gradient border
-   - Professional introduction
-   - Call-to-action buttons (View Work, Download Resume, Contact)
-   - Social media links (GitHub, LinkedIn, Email)
+The website is organized into several sections to give you a complete picture of who I am and what I do:
 
-2. **👤 About Section**
-   - Personal introduction
-   - Skills with visual progress bars
-   - Key features and highlights
-   - Profile picture display
-
-3. **📄 Resume Section**
-   - Work experience timeline with achievements
-   - Education history
-   - Technical skills categorized
-   - **Download Resume button** with visual feedback
-
-4. **💼 Portfolio Section**
-   - Project showcase with images
-   - Project descriptions and tech stack
-   - GitHub and live demo links
-   - Responsive grid layout
-
-5. **📧 Contact Section**
-   - Contact form (ready for integration)
-   - Contact information
-   - Social media links
-   - Location and email
-
-6. **🔗 Footer**
-   - Quick navigation links
-   - Social media connections
-   - Copyright information
-
-7. **🤖 Chat Assistant**
-   - Floating chat button (bottom-right)
-   - Interactive FAQ chatbot
-   - 20+ pre-defined questions & answers
-   - Instant responses about background, skills, contact info
-   - Theme-aware design
+- **🏠 Home**: Introduction with my profile, current role, and quick links to my work
+- **👤 About**: My background, journey in tech, and core competencies in data engineering and DevOps
+- **📄 Resume**: Detailed work experience at Deloitte and Feedloop, education from UGM, technical skills, certifications, and languages
+- **💼 Portfolio**: Showcase of projects I've worked on (coming soon with real projects!)
+- **📧 Contact**: Multiple ways to reach me - email, phone, or through the contact form
+- **🤖 AI Chat Assistant**: A smart chatbot powered by Google Gemini that can answer questions about my experience, skills, and background
 
 ## 🛠️ Tech Stack
 
-### **Core Technologies**
-- **Framework**: [Next.js 14](https://nextjs.org/) with App Router
-- **Language**: [TypeScript 5.3](https://www.typescriptlang.org/)
-- **Styling**: [TailwindCSS 3.4](https://tailwindcss.com/)
-- **UI Library**: Custom components with [shadcn/ui](https://ui.shadcn.com/) patterns
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Animations**: TailwindCSS animations + custom keyframes
+I chose these technologies based on my experience and their industry relevance:
 
-### **Development Tools**
-- **Package Manager**: npm
-- **Linting**: ESLint with Next.js config
-- **CSS Processing**: PostCSS with Autoprefixer
-- **Type Checking**: TypeScript strict mode
+**Frontend:**
+- **Next.js 14** - React framework with App Router for optimal performance
+- **TypeScript** - Type safety and better developer experience
+- **TailwindCSS** - Utility-first CSS for rapid UI development
+- **Lucide React** - Beautiful, consistent icons
+- **shadcn/ui** - High-quality, accessible UI components
 
-### **Deployment**
-- **Containerization**: Docker with multi-stage builds
-- **Orchestration**: Kubernetes with HPA
-- **CI/CD**: GitHub Actions
-- **Hosting**: Vercel, Kubernetes, or any Node.js platform
+**AI Integration:**
+- **Google Gemini AI** - Free AI API for the intelligent chat assistant
+- **Custom API Routes** - Next.js API routes for backend logic
 
-## 🚀 Quick Start
+**DevOps & Deployment:**
+- **Docker** - Containerization for consistent deployments
+- **Kubernetes** - Orchestration with auto-scaling capabilities
+- **GitHub Actions** - CI/CD pipeline automation
+- **Vercel** - Primary hosting platform (also K8s-ready)
+
+## 🚀 Running Locally
+
+Want to run this project on your machine? Here's how:
 
 ### **Prerequisites**
-- Node.js 18+ and npm
+- Node.js 18 or higher
+- npm or yarn
 - Git
 
-### **Installation**
+### **Setup**
 
 ```bash
-# 1. Clone the repository
+# Clone the repository
 git clone https://github.com/afnersirait/personal-website.git
 cd personal-website
 
-# 2. Install dependencies
+# Install dependencies
 npm install
 
-# 3. Run development server
+# Set up environment variables (for AI chat)
+# Create .env.local and add:
+# GOOGLE_API_KEY=your_gemini_api_key_here
+
+# Run development server
 npm run dev
 
-# 4. Open browser
-# Navigate to http://localhost:3000
+# Open http://localhost:3000 in your browser
 ```
 
-### **First Steps**
-1. Add your profile picture to `public/images/profile.jpg`
-2. Add your resume PDF to `public/resume/Afner_Sirait_Resume.pdf`
-3. Update personal information in components
-4. Customize colors in `app/globals.css`
-
-See [QUICKSTART.md](guideline/QUICKSTART.md) for detailed setup guide.
-
-## 🎨 Customization
-
-### **Quick Customization**
-
-**1. Profile Picture**
-```bash
-# Add your photo (recommended: 400x400px, JPG/PNG)
-public/images/profile.jpg
-```
-See [PROFILE_PICTURE_GUIDE.md](guideline/PROFILE_PICTURE_GUIDE.md)
-
-**2. Resume/CV**
-```bash
-# Add your resume PDF
-public/resume/Afner_Sirait_Resume.pdf
-```
-See [RESUME_DOWNLOAD_GUIDE.md](guideline/RESUME_DOWNLOAD_GUIDE.md)
-
-**3. Theme Switcher**
-Toggle between light and dark themes:
-- Click sun/moon icon in navigation
-- Preference saved automatically
-- Works on all devices
-
-See [THEME_GUIDE.md](guideline/THEME_GUIDE.md)
-
-**4. Chat Assistant FAQs**
-```typescript
-// lib/faqData.ts
-// Add or modify FAQ questions and answers
-```
-See [CHAT_ASSISTANT_GUIDE.md](guideline/CHAT_ASSISTANT_GUIDE.md)
-
-**5. Personal Information**
-Update these components:
-- `components/Hero.tsx` - Name, title, bio, social links
-- `components/About.tsx` - About text, skills
-- `components/Resume.tsx` - Experience, education, skills
-- `components/Portfolio.tsx` - Projects
-- `components/Contact.tsx` - Contact info
-- `components/Footer.tsx` - Footer details
-- `lib/faqData.ts` - Chat assistant FAQs
-
-**6. Color Scheme**
-```css
-/* app/globals.css */
---primary: 199 89% 48%;  /* Professional teal-blue */
---secondary: 210 40% 96%; /* Light gray */
-```
-See [DESIGN_SYSTEM.md](guideline/DESIGN_SYSTEM.md)
-
-**7. Metadata**
-```typescript
-// app/layout.tsx
-export const metadata = {
-  title: "Your Name - Portfolio",
-  description: "Your description",
-  // ...
-}
-```
-
-### **Detailed Guides**
-- 📋 [Customization Checklist](guideline/CUSTOMIZATION_CHECKLIST.md)
-- 🎨 [Design System](guideline/DESIGN_SYSTEM.md)
-- 📱 [Mobile Responsive Guide](guideline/MOBILE_RESPONSIVE_GUIDE.md)
-- 🌓 [Theme Guide](guideline/THEME_GUIDE.md)
-- 🤖 [Chat Assistant Guide](guideline/CHAT_ASSISTANT_GUIDE.md)
-
-## 📝 Available Scripts
+### **Available Commands**
 
 ```bash
-npm run dev      # Start development server (http://localhost:3000)
+npm run dev      # Start development server
 npm run build    # Build for production
 npm start        # Start production server
-npm run lint     # Run ESLint for code quality
+npm run lint     # Run ESLint
+```
+
+For detailed setup instructions, check out the [AI_CHAT_SETUP.md](AI_CHAT_SETUP.md) guide.
+
+## 📂 Project Structure
+
+```
+personal-website/
+├── app/                    # Next.js 14 App Router
+│   ├── api/chat/          # AI chat API endpoint
+│   ├── globals.css        # Global styles & animations
+│   ├── layout.tsx         # Root layout
+│   └── page.tsx           # Home page
+├── components/            # React components
+│   ├── ui/               # Reusable UI components
+│   ├── Hero.tsx          # Landing section
+│   ├── About.tsx         # About me section
+│   ├── Resume.tsx        # Work experience & education
+│   ├── Portfolio.tsx     # Projects showcase
+│   ├── Contact.tsx       # Contact form
+│   ├── ChatAssistant.tsx # AI chatbot
+│   └── ...
+├── lib/                  # Utilities
+│   ├── faqData.ts       # Chat FAQ data
+│   └── utils.ts         # Helper functions
+├── public/              # Static assets
+│   ├── images/         # Profile pictures
+│   └── resume/         # Resume PDF
+└── guideline/          # Documentation
 ```
 
 ## 🚀 Deployment
 
-### **Option 1: Vercel (Recommended - Easiest)**
+This site is currently deployed on Vercel, but I've also set it up to work with Docker and Kubernetes for more complex deployment scenarios.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/afnersirait/personal-website)
+### **Vercel (Current)**
+
+The easiest way to deploy this is through Vercel:
 
 ```bash
-# 1. Push to GitHub
+# Push to GitHub
 git push origin main
 
-# 2. Import on Vercel
-# Visit https://vercel.com and import your repo
-
-# 3. Deploy automatically
-# Vercel will auto-deploy on every push
+# Connect to Vercel
+# Visit vercel.com and import the repository
+# It will auto-deploy on every push
 ```
 
-**Features:**
-- ✅ Automatic deployments
-- ✅ Global CDN
-- ✅ SSL certificates
-- ✅ Preview deployments
-- ✅ Analytics
+### **Docker & Kubernetes**
 
-### **Option 2: Kubernetes (Production-Grade)**
-
-Full production deployment with Docker and Kubernetes:
+For production-grade deployments, I've included Docker and Kubernetes configurations:
 
 ```bash
-# Quick deploy
-./scripts/deploy.sh
-
-# Or manual deployment
-kubectl apply -f k8s/ -n personal-website
-```
-
-**Features:**
-- ✅ Docker multi-stage builds
-- ✅ Kubernetes manifests (Deployment, Service, Ingress, HPA)
-- ✅ GitHub Actions CI/CD
-- ✅ Auto-scaling (2-10 replicas)
-- ✅ SSL/TLS with cert-manager
-- ✅ Health checks & monitoring
-
-**Guides:**
-- 📘 [Kubernetes Deployment Guide](guideline/KUBERNETES_DEPLOYMENT.md)
-- 🚀 [Kubernetes Quickstart](guideline/KUBERNETES_QUICKSTART.md)
-
-### **Option 3: Docker**
-
-```bash
-# Build image
+# Build Docker image
 docker build -t personal-website .
 
-# Run container
+# Run with Docker
 docker run -p 3000:3000 personal-website
+
+# Deploy to Kubernetes
+kubectl apply -f k8s/
 ```
 
-### **Option 4: Other Platforms**
+The K8s setup includes auto-scaling, health checks, and ingress configuration. Check out the [guideline](guideline/) folder for detailed deployment guides.
 
-- **Netlify**: Drag & drop or Git integration
-- **AWS Amplify**: Full-stack deployment
-- **Railway**: One-click deployment
-- **Render**: Auto-deploy from Git
-- **DigitalOcean App Platform**: Managed deployment
+## 🎯 Key Features I'm Proud Of
 
-## 📄 Project Structure
-
-```
-personal-website/
-├── app/                          # Next.js 14 App Router
-│   ├── globals.css              # Global styles & CSS variables
-│   ├── layout.tsx               # Root layout with metadata
-│   └── page.tsx                 # Home page (main entry)
-│
-├── components/                   # React components
-│   ├── ui/                      # Reusable UI components
-│   │   ├── button.tsx           # Button component
-│   │   ├── card.tsx             # Card components
-│   │   └── badge.tsx            # Badge component
-│   ├── Navigation.tsx           # Header navigation with mobile menu
-│   ├── Hero.tsx                 # Hero section with CTA
-│   ├── About.tsx                # About section with skills
-│   ├── Resume.tsx               # Resume/CV section
-│   ├── Portfolio.tsx            # Projects showcase
-│   ├── Contact.tsx              # Contact form & info
-│   ├── Footer.tsx               # Footer with links
-│   ├── ProfilePicture.tsx       # Animated profile picture
-│   ├── DownloadResumeButton.tsx # Resume download button
-│   ├── ThemeProvider.tsx        # Theme context provider
-│   ├── ThemeToggle.tsx          # Theme switcher button
-│   └── ChatAssistant.tsx        # FAQ chatbot component
-│
-├── lib/
-│   ├── utils.ts                 # Utility functions (cn, etc.)
-│   └── faqData.ts               # Chat assistant FAQ data
-│
-├── public/                       # Static assets
-│   ├── images/                  # Images folder
-│   │   ├── profile.jpg          # Your profile picture
-│   │   ├── profile.webp         # Optimized profile picture
-│   │   └── README.md            # Image optimization guide
-│   └── resume/                  # Resume folder
-│       ├── Afner_Sirait_Resume.pdf  # Your resume PDF
-│       └── README.md            # Resume setup guide
-│
-├── guideline/                    # Documentation
-│   ├── CHAT_ASSISTANT_GUIDE.md  # Chat assistant documentation
-│   ├── CUSTOMIZATION_CHECKLIST.md
-│   ├── DESIGN_SYSTEM.md
-│   ├── KUBERNETES_DEPLOYMENT.md
-│   ├── KUBERNETES_QUICKSTART.md
-│   ├── MOBILE_RESPONSIVE_GUIDE.md
-│   ├── PROFILE_PICTURE_GUIDE.md
-│   ├── PROJECT_SUMMARY.md
-│   ├── QUICKSTART.md
-│   ├── RESUME_DOWNLOAD_GUIDE.md
-│   ├── SETUP.md
-│   └── THEME_GUIDE.md           # Theme switcher documentation
-│
-├── k8s/                          # Kubernetes manifests
-│   ├── deployment.yaml          # Deployment & Service
-│   ├── ingress.yaml             # Ingress configuration
-│   ├── hpa.yaml                 # Horizontal Pod Autoscaler
-│   └── README.md                # K8s quick reference
-│
-├── scripts/                      # Deployment scripts
-│   ├── deploy.sh                # Quick deploy script
-│   └── cleanup.sh               # Cleanup script
-│
-├── .github/workflows/            # GitHub Actions
-│   ├── docker-build-push.yml    # Docker CI/CD
-│   ├── deploy-k8s.yml           # Kubernetes deployment
-│   └── README.md                # Workflows guide
-│
-├── Dockerfile                    # Docker configuration
-├── .dockerignore                 # Docker ignore file
-├── next.config.js                # Next.js configuration
-├── tailwind.config.ts            # TailwindCSS configuration
-├── tsconfig.json                 # TypeScript configuration
-├── postcss.config.js             # PostCSS configuration
-├── package.json                  # Dependencies & scripts
-└── README.md                     # This file
-```
-
-## 🎯 Best Practices
-
-### **Code Quality**
-- ✅ **TypeScript**: Full type safety
-- ✅ **ESLint**: Code linting and formatting
-- ✅ **Component Architecture**: Modular and reusable
-- ✅ **Clean Code**: Well-organized and documented
-
-### **Performance**
-- ✅ **Next.js 14**: Latest App Router for optimal performance
-- ✅ **Image Optimization**: Next.js Image component
-- ✅ **Code Splitting**: Automatic route-based splitting
-- ✅ **CSS Optimization**: TailwindCSS with PurgeCSS
-
-### **Responsive Design**
-- ✅ **Mobile-First**: Optimized for mobile devices
-- ✅ **Touch-Friendly**: 44px minimum touch targets
-- ✅ **Breakpoints**: sm (640px), md (768px), lg (1024px), xl (1280px)
-- ✅ **Viewport**: Proper meta viewport configuration
-
-### **Accessibility**
-- ✅ **Semantic HTML**: Proper HTML5 elements
-- ✅ **ARIA Labels**: Screen reader support
-- ✅ **Keyboard Navigation**: Full keyboard accessibility
-- ✅ **Color Contrast**: WCAG 2.1 AA compliant
-
-### **SEO**
-- ✅ **Meta Tags**: Title, description, keywords
-- ✅ **Open Graph**: Social media sharing
-- ✅ **Semantic Structure**: Proper heading hierarchy
-- ✅ **Fast Loading**: Optimized for Core Web Vitals
+- **AI Chat Integration**: Spent time integrating Google Gemini AI to make the site interactive
+- **Smooth Animations**: Added custom CSS animations for better user experience
+- **Responsive Design**: Tested on multiple devices to ensure it works everywhere
+- **Dark Mode**: Implemented theme switching with persistent preferences
+- **Performance**: Optimized for fast loading and smooth interactions
+- **DevOps Ready**: Docker and Kubernetes configs for production deployment
 
 ## 📚 Documentation
 
-### **Setup & Customization**
-- 🚀 [Quick Start Guide](guideline/QUICKSTART.md)
-- 📋 [Customization Checklist](guideline/CUSTOMIZATION_CHECKLIST.md)
-- 🛠️ [Setup Guide](guideline/SETUP.md)
-- 📊 [Project Summary](guideline/PROJECT_SUMMARY.md)
+I've created detailed guides in the `guideline/` folder:
+- AI Chat setup and customization
+- Kubernetes deployment instructions
+- Design system and theme configuration
+- Mobile responsive guidelines
+- And more...
 
-### **Features**
-- 🖼️ [Profile Picture Guide](guideline/PROFILE_PICTURE_GUIDE.md)
-- 📄 [Resume Download Guide](guideline/RESUME_DOWNLOAD_GUIDE.md)
-- 🌓 [Theme Switcher Guide](guideline/THEME_GUIDE.md)
-- 🤖 [Chat Assistant Guide](guideline/CHAT_ASSISTANT_GUIDE.md)
-- 🎨 [Design System](guideline/DESIGN_SYSTEM.md)
-- 📱 [Mobile Responsive Guide](guideline/MOBILE_RESPONSIVE_GUIDE.md)
+## 📧 Get in Touch
 
-### **Deployment**
-- ☸️ [Kubernetes Deployment](guideline/KUBERNETES_DEPLOYMENT.md)
-- 🚀 [Kubernetes Quickstart](guideline/KUBERNETES_QUICKSTART.md)
-- 🐳 [Docker Configuration](Dockerfile)
-- ⚙️ [GitHub Actions](.github/workflows/README.md)
+If you have questions about the project or want to discuss opportunities:
 
-## 📧 Contact Form Integration
+- **Email**: afnersirait@gmail.com
+- **LinkedIn**: [linkedin.com/in/afnersirait](https://linkedin.com/in/afnersirait)
+- **GitHub**: [github.com/afnersirait](https://github.com/afnersirait)
 
-The contact form is ready for integration. Choose your preferred service:
+Or just use the chat assistant on the website - it's powered by AI and knows all about me! 🤖
 
-**Recommended Services:**
-- **[Formspree](https://formspree.io/)** - Easy setup, free tier
-- **[EmailJS](https://www.emailjs.com/)** - Client-side email sending
-- **[Resend](https://resend.com/)** - Modern email API
-- **[SendGrid](https://sendgrid.com/)** - Enterprise-grade
-- **Custom API** - Build your own backend
+---
 
-**Integration Steps:**
-1. Choose a service
-2. Get API key
-3. Update `components/Contact.tsx`
-4. Add environment variables
-5. Test the form
+**Built with passion by Afner Sirait** 🚀
 
-**Made with ❤️**
-
-Happy coding! 🚀
+*Last updated: January 2026*
