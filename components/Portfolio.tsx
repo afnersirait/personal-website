@@ -41,8 +41,8 @@ const Portfolio = () => {
         "An AI-powered content generation tool using machine learning models to create marketing copy and blog posts.",
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
       tags: ["React", "OpenAI", "FastAPI", "Docker"],
-      github: "https://github.com/yourusername/project4",
-      demo: "https://demo-project4.com",
+      github: "https://github.com/afnersirait/ai-content-generator.git",
+      // demo: "https://demo-project4.com",
     },
     {
       title: "Fitness Tracking App",
