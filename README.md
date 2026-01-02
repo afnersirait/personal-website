@@ -1,8 +1,6 @@
 # Afner Sirait - Personal Portfolio Website
 
-Hey there! 👋 I'm Afner Sirait, an AI & Data Analyst at Feedloop.ai. This is my personal portfolio website where I showcase my journey in data engineering, DevOps, and analytics.
-
-Built this from scratch using modern web technologies to demonstrate my technical skills and share my professional experience. Feel free to explore and reach out if you'd like to connect!
+Hey there! 👋 I'm Afner Sirait, an AI & Data Analyst at Feedloop.ai. This is my personal portfolio website where I showcase my journey in data engineering, DevOps, and analytics. Feel free to explore and reach out if you'd like to connect!
 
 ![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue?style=flat-square&logo=typescript)
@@ -14,7 +12,7 @@ Built this from scratch using modern web technologies to demonstrate my technica
 I built this portfolio to be more than just a static resume - it's a fully interactive experience that showcases my technical capabilities:
 
 ### **Key Highlights**
-- � **Modern Design**: Clean, professional UI with beautiful gradient effects and animations
+- � **Modern Design**: Professional UI with beautiful gradient effects and animations
 - � **Mobile-First**: Works perfectly on any device - phone, tablet, or desktop
 - ⚡ **Lightning Fast**: Built with Next.js 14 for optimal performance
 - 🤖 **AI-Powered Chat**: Integrated Google Gemini AI to answer questions about my background
