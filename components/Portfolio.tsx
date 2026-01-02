@@ -45,7 +45,7 @@ const Portfolio = () => {
       // demo: "https://demo-project4.com",
     },
     {
-      title: "Personal Website for Resume and Portfolio",
+      title: "Personal Website",
       description:
         "This is my personal portfolio website where I showcase my journey in data engineering, DevOps, and analytics.",
       image: "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?w=800&h=600&fit=crop",
