@@ -118,7 +118,7 @@ personal-website/
 └── guideline/          # Documentation
 ```
 
-## 🚀 Deployment
+## Deployment
 
 This site is currently deployed on Vercel, but I've also set it up to work with Docker and Kubernetes for more complex deployment scenarios.
 
@@ -151,24 +151,6 @@ kubectl apply -f k8s/
 ```
 
 The K8s setup includes auto-scaling, health checks, and ingress configuration. Check out the [guideline](guideline/) folder for detailed deployment guides.
-
-## 🎯 Key Features I'm Proud Of
-
-- **AI Chat Integration**: Spent time integrating Google Gemini AI to make the site interactive
-- **Smooth Animations**: Added custom CSS animations for better user experience
-- **Responsive Design**: Tested on multiple devices to ensure it works everywhere
-- **Dark Mode**: Implemented theme switching with persistent preferences
-- **Performance**: Optimized for fast loading and smooth interactions
-- **DevOps Ready**: Docker and Kubernetes configs for production deployment
-
-## 📚 Documentation
-
-I've created detailed guides in the `guideline/` folder:
-- AI Chat setup and customization
-- Kubernetes deployment instructions
-- Design system and theme configuration
-- Mobile responsive guidelines
-- And more...
 
 ## 📧 Get in Touch
 
