@@ -45,13 +45,13 @@ const Portfolio = () => {
       // demo: "https://demo-project4.com",
     },
     {
-      title: "Fitness Tracking App",
+      title: "Personal Website for Resume and Portfolio",
       description:
-        "Mobile-first fitness application with workout tracking, nutrition planning, and progress visualization.",
+        "This is my personal portfolio website where I showcase my journey in data engineering, DevOps, and analytics.",
       image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop",
-      tags: ["React Native", "Firebase", "Chart.js"],
-      github: "https://github.com/yourusername/project5",
-      demo: "https://demo-project5.com",
+      tags: ["Next.js", "TailwindCSS", "TypeScript", "Lucide"],
+      github: "https://github.com/afnersirait/personal-website.git",
+      // demo: "https://demo-project5.com",
     },
     {
       title: "Real Estate Platform",
@@ -59,8 +59,8 @@ const Portfolio = () => {
         "Property listing and management platform with advanced search, virtual tours, and appointment scheduling.",
       image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
       tags: ["Next.js", "Prisma", "AWS", "Mapbox"],
-      github: "https://github.com/yourusername/project6",
-      demo: "https://demo-project6.com",
+      // github: "https://github.com/yourusername/project6",
+      // demo: "https://demo-project6.com",
     },
   ];
 
