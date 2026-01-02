@@ -9,8 +9,6 @@ Hey there! 👋 I'm Afner Sirait, an AI & Data Analyst at Feedloop.ai. This is m
 
 ## 🚀 What's Inside
 
-I built this portfolio to be more than just a static resume - it's a fully interactive experience that showcases my technical capabilities:
-
 ### **Key Highlights**
 - � **Modern Design**: Professional UI with beautiful gradient effects and animations
 - � **Mobile-First**: Works perfectly on any device - phone, tablet, or desktop
