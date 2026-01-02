@@ -182,6 +182,3 @@ Or just use the chat assistant on the website - it's powered by AI and knows all
 
 ---
 
-**Built with passion by Afner Sirait** 🚀
-
-*Last updated: January 2026*
