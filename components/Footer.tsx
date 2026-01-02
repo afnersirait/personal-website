@@ -102,8 +102,7 @@ const Footer = () => {
 
           <div className="pt-8 border-t border-border text-center">
             <p className="text-muted-foreground flex items-center justify-center gap-2">
-              © {currentYear} Afner Sirait. Made with{" "}
-              <Heart className="h-4 w-4 text-red-500 fill-red-500" />
+              © {currentYear} Afner Sirait.
             </p>
           </div>
         </div>
