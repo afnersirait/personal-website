@@ -178,7 +178,5 @@ If you have questions about the project or want to discuss opportunities:
 - **LinkedIn**: [linkedin.com/in/afnersirait](https://linkedin.com/in/afnersirait)
 - **GitHub**: [github.com/afnersirait](https://github.com/afnersirait)
 
-Or just use the chat assistant on the website - it's powered by AI and knows all about me! 🤖
-
 ---
 
