@@ -10,10 +10,6 @@ export const metadata: Metadata = {
   description: "Personal portfolio and resume website showcasing my work, skills, and experience.",
   keywords: ["portfolio", "resume", "cv", "developer", "designer", "data analyst", "devops"],
   authors: [{ name: "Afner Sirait" }],
-  icons: {
-    icon: '/icon.png',
-    apple: '/apple-icon.png',
-  },
   openGraph: {
     title: "Afner Sirait - Portfolio & Resume",
     description: "Personal portfolio and resume website",
