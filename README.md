@@ -7,9 +7,7 @@ Hey there! 👋 I'm Afner Sirait. This is my personal portfolio website where I 
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-38bdf8?style=flat-square&logo=tailwindcss)
 ![React](https://img.shields.io/badge/React-18-61dafb?style=flat-square&logo=react)
 
-## 🚀 What's Inside
-
-### **Key Highlights**
+## **Key Highlights**
 - � **Modern Design**: Professional UI with beautiful gradient effects and animations
 - � **Mobile-First**: Works perfectly on any device - phone, tablet, or desktop
 - ⚡ **Lightning Fast**: Built with Next.js 14 for optimal performance
@@ -18,8 +16,6 @@ Hey there! 👋 I'm Afner Sirait. This is my personal portfolio website where I 
 - 📄 **Interactive Resume**: Downloadable CV with detailed work experience and skills
 - 🎭 **Smooth Animations**: Entrance animations and hover effects for better UX
 - � **SEO Ready**: Optimized for search engines and social media sharing
-
-## 📋 What You'll Find
 
 The website is organized into several sections to give you a complete picture of who I am and what I do:
 
@@ -30,7 +26,7 @@ The website is organized into several sections to give you a complete picture of
 - **📧 Contact**: Multiple ways to reach me - email, phone, or through the contact form
 - **🤖 AI Chat Assistant**: A smart chatbot powered by Google Gemini that can answer questions about my experience, skills, and background
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 I chose these technologies based on my experience and their industry relevance:
 
@@ -51,7 +47,7 @@ I chose these technologies based on my experience and their industry relevance:
 - **GitHub Actions** - CI/CD pipeline automation
 - **Vercel** - Primary hosting platform (also K8s-ready)
 
-## 🚀 Running Locally
+## Running Locally
 
 Want to run this project on your machine? Here's how:
 
@@ -152,7 +148,7 @@ kubectl apply -f k8s/
 
 The K8s setup includes auto-scaling, health checks, and ingress configuration. Check out the [guideline](guideline/) folder for detailed deployment guides.
 
-## 📧 Get in Touch
+## Get in Touch
 
 If you have questions about the project or want to discuss opportunities:
 
