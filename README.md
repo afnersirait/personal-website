@@ -8,14 +8,14 @@ Hey there! 👋 I'm Afner Sirait. This is my personal portfolio website where I 
 ![React](https://img.shields.io/badge/React-18-61dafb?style=flat-square&logo=react)
 
 ## **Key Highlights**
-- � **Modern Design**: Professional UI with beautiful gradient effects and animations
-- � **Mobile-First**: Works perfectly on any device - phone, tablet, or desktop
-- ⚡ **Lightning Fast**: Built with Next.js 14 for optimal performance
-- 🤖 **AI-Powered Chat**: Integrated Google Gemini AI to answer questions about my background
-- 🌓 **Dark Mode**: Toggle between light and dark themes
-- 📄 **Interactive Resume**: Downloadable CV with detailed work experience and skills
-- 🎭 **Smooth Animations**: Entrance animations and hover effects for better UX
-- � **SEO Ready**: Optimized for search engines and social media sharing
+-  **Modern Design**: Professional UI with beautiful gradient effects and animations
+-  **Mobile-First**: Works perfectly on any device - phone, tablet, or desktop
+-  **Lightning Fast**: Built with Next.js 14 for optimal performance
+-  **AI-Powered Chat**: Integrated Google Gemini AI to answer questions about my background
+-  **Dark Mode**: Toggle between light and dark themes
+-  **Interactive Resume**: Downloadable CV with detailed work experience and skills
+-  **Smooth Animations**: Entrance animations and hover effects for better UX
+-  **SEO Ready**: Optimized for search engines and social media sharing
 
 The website is organized into several sections to give you a complete picture of who I am and what I do:
 
