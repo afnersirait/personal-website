@@ -1,7 +1,8 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Database, Cloud, Code, Wrench } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -15,63 +16,147 @@ interface Project {
   demo?: string;
 }
 
+interface ProjectCategory {
+  id: string;
+  name: string;
+  icon: React.ReactNode;
+  projects: Project[];
+}
+
 const Portfolio = () => {
-  const projects: Project[] = [
+  const [activeCategory, setActiveCategory] = useState<string>("all");
+
+  const categories: ProjectCategory[] = [
     {
-      title: "E-Commerce Platform",
-      description:
-        "A full-featured e-commerce platform with product management, shopping cart, and secure payment integration.",
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop",
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
-      github: "https://github.com/afnersirait/ecommerce-platform.git",
-      // demo: "https://demo-project1.com",
+      id: "data",
+      name: "Data Analytics & Engineering",
+      icon: <Database className="h-5 w-5" />,
+      projects: [
+        {
+          title: "Real-Time Data Pipeline & Analytics",
+          description:
+            "End-to-end data pipeline processing millions of events daily. Features real-time ETL, data warehousing, automated ML model training, and interactive dashboards.",
+          image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+          tags: ["Apache Kafka", "Spark", "Airflow", "BigQuery", "Python", "dbt"],
+          github: "https://github.com/afnersirait/data-pipeline",
+        },
+        {
+          title: "AI-Powered Business Intelligence",
+          description:
+            "Intelligent BI platform with natural language queries, automated insights generation, anomaly detection, and predictive forecasting using custom ML models.",
+          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+          tags: ["Python", "TensorFlow", "Power BI", "SQL", "scikit-learn"],
+          github: "https://github.com/afnersirait/ai-bi-platform",
+        },
+        {
+          title: "Customer Churn Prediction System",
+          description:
+            "Machine learning system predicting customer churn with 92% accuracy. Features automated feature engineering, model retraining pipeline, and explainable AI.",
+          image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+          tags: ["Python", "XGBoost", "MLflow", "FastAPI", "PostgreSQL"],
+          github: "https://github.com/afnersirait/churn-prediction",
+        },
+      ],
     },
     {
-      title: "Task Management App",
-      description:
-        "A collaborative task management application with real-time updates, team collaboration features, and analytics dashboard.",
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
-      tags: ["Next.js", "TypeScript", "PostgreSQL", "WebSocket"],
-      github: "https://github.com/afnersirait/task-management-app.git",
-      // demo: "https://demo-project2.com",
+      id: "devops",
+      name: "DevOps & Automation",
+      icon: <Wrench className="h-5 w-5" />,
+      projects: [
+        {
+          title: "Production-Grade Kubernetes Platform",
+          description:
+            "Self-healing Kubernetes cluster with auto-scaling, service mesh, centralized logging (ELK), monitoring (Prometheus/Grafana), and CI/CD pipeline using ArgoCD.",
+          image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800&h=600&fit=crop",
+          tags: ["Kubernetes", "Docker", "Terraform", "ArgoCD", "Prometheus"],
+          github: "https://github.com/afnersirait/k8s-platform",
+        },
+        {
+          title: "Enterprise CI/CD Pipeline with GitOps",
+          description:
+            "Complete CI/CD pipeline using Jenkins, ArgoCD, and GitHub Actions. Automated testing, security scanning, container builds, and deployment with rollback capabilities.",
+          image: "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=800&h=600&fit=crop",
+          tags: ["Jenkins", "ArgoCD", "Kubernetes", "Docker", "GitHub Actions"],
+          github: "https://github.com/afnersirait/cicd-pipeline",
+        },
+        {
+          title: "DevSecOps Security Automation",
+          description:
+            "Automated security scanning pipeline for containers and infrastructure. Includes vulnerability scanning, compliance checks, secret management, and remediation workflows.",
+          image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=600&fit=crop",
+          tags: ["Trivy", "SonarQube", "Vault", "OWASP", "Falco"],
+          github: "https://github.com/afnersirait/devsecops",
+        },
+      ],
     },
     {
-      title: "Social Media Dashboard",
-      description:
-        "Analytics dashboard for social media management with data visualization, scheduling, and engagement tracking.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-      tags: ["Vue.js", "Python", "D3.js", "Redis"],
-      github: "https://github.com/afnersirait/social-media-dashboard.git",
-      // demo: "https://demo-project3.com",
+      id: "cloud",
+      name: "Cloud & Infrastructure",
+      icon: <Cloud className="h-5 w-5" />,
+      projects: [
+        {
+          title: "Multi-Cloud Infrastructure Automation",
+          description:
+            "Automated infrastructure provisioning across AWS, Azure, and GCP using Terraform. Includes auto-scaling, disaster recovery, and cost optimization with monitoring.",
+          image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=600&fit=crop",
+          tags: ["Terraform", "Ansible", "AWS", "Azure", "Prometheus", "Grafana"],
+          github: "https://github.com/afnersirait/multi-cloud-infra",
+        },
+        {
+          title: "Cloud Cost Optimization Platform",
+          description:
+            "Automated cloud cost analysis and optimization tool. Identifies unused resources, right-sizing opportunities, and implements auto-shutdown policies with detailed reports.",
+          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+          tags: ["Python", "AWS Cost Explorer", "Terraform", "Lambda"],
+          github: "https://github.com/afnersirait/cost-optimizer",
+        },
+        {
+          title: "Automated Disaster Recovery System",
+          description:
+            "Cross-region disaster recovery solution with automated failover, backup orchestration, and RTO/RPO monitoring. Includes regular DR testing automation.",
+          image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=600&fit=crop",
+          tags: ["AWS", "Terraform", "Lambda", "CloudFormation", "Python"],
+          github: "https://github.com/afnersirait/disaster-recovery",
+        },
+      ],
     },
     {
-      title: "AI Content Generator",
-      description:
-        "An AI-powered content generation tool using machine learning models to create marketing copy and blog posts.",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
-      tags: ["React", "OpenAI", "FastAPI", "Docker"],
-      github: "https://github.com/afnersirait/ai-content-generator.git",
-      // demo: "https://demo-project4.com",
-    },
-    {
-      title: "Personal Website",
-      description:
-        "This is my personal portfolio website where I showcase my journey in data engineering, DevOps, and analytics.",
-      image: "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?w=800&h=600&fit=crop",
-      tags: ["Next.js", "TailwindCSS", "TypeScript", "Lucide"],
-      github: "https://github.com/afnersirait/personal-website.git",
-      // demo: "https://demo-project5.com",
-    },
-    {
-      title: "Real Estate Platform",
-      description:
-        "Property listing and management platform with advanced search, virtual tours, and appointment scheduling.",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
-      tags: ["Next.js", "Prisma", "AWS", "Mapbox"],
-      // github: "https://github.com/yourusername/project6",
-      // demo: "https://demo-project6.com",
+      id: "web",
+      name: "Web Development",
+      icon: <Code className="h-5 w-5" />,
+      projects: [
+        {
+          title: "Personal Portfolio Website",
+          description:
+            "Modern portfolio website with AI chatbot, dark mode, smooth animations, and production-grade Kubernetes deployment. Features Google Gemini AI integration.",
+          image: "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?w=800&h=600&fit=crop",
+          tags: ["Next.js", "TailwindCSS", "TypeScript", "Gemini AI", "Kubernetes"],
+          github: "https://github.com/afnersirait/personal-website",
+        },
+        {
+          title: "AI Content Generator",
+          description:
+            "AI-powered content generation platform with multi-model support (GPT-4, Claude, Gemini), content quality scoring, usage analytics, and A/B testing for prompts.",
+          image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
+          tags: ["React", "OpenAI", "LangChain", "FastAPI", "Docker"],
+          github: "https://github.com/afnersirait/ai-content-generator",
+        },
+        {
+          title: "E-Commerce Platform",
+          description:
+            "Full-featured e-commerce platform with product management, shopping cart, secure payment integration, and real-time inventory tracking.",
+          image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop",
+          tags: ["React", "Node.js", "MongoDB", "Stripe", "Redis"],
+          github: "https://github.com/afnersirait/ecommerce-platform",
+        },
+      ],
     },
   ];
+
+  const allProjects = categories.flatMap((cat) => cat.projects);
+  const displayProjects = activeCategory === "all" 
+    ? allProjects 
+    : categories.find((cat) => cat.id === activeCategory)?.projects || [];
 
   return (
     <section id="portfolio" className="py-20 bg-gradient-to-b from-background via-secondary/10 to-background relative overflow-hidden">
@@ -83,18 +168,42 @@ const Portfolio = () => {
       
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in-up">
+          <div className="text-center mb-12 animate-fade-in-up">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-cyan-500 to-teal-500 bg-clip-text text-transparent">
               Portfolio
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-primary via-cyan-500 to-teal-500 mx-auto mb-6 rounded-full"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A selection of my recent projects showcasing my skills and expertise.
+              A selection of my projects showcasing expertise across data, DevOps, cloud, and web development.
             </p>
           </div>
 
+          {/* Category Filter Tabs */}
+          <div className="flex flex-wrap justify-center gap-3 mb-12 animate-fade-in-up">
+            <Button
+              variant={activeCategory === "all" ? "default" : "outline"}
+              onClick={() => setActiveCategory("all")}
+              className="transition-all duration-300"
+            >
+              All Projects
+            </Button>
+            {categories.map((category) => (
+              <Button
+                key={category.id}
+                variant={activeCategory === category.id ? "default" : "outline"}
+                onClick={() => setActiveCategory(category.id)}
+                className="transition-all duration-300 flex items-center gap-2"
+              >
+                {category.icon}
+                <span className="hidden sm:inline">{category.name}</span>
+                <span className="sm:hidden">{category.name.split(" ")[0]}</span>
+              </Button>
+            ))}
+          </div>
+
+          {/* Projects Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((project, index) => (
+            {displayProjects.map((project, index) => (
               <Card
                 key={index}
                 className="overflow-hidden group hover:shadow-2xl transition-all duration-300 border-none hover:-translate-y-2 bg-gradient-to-br from-background to-secondary/20"
