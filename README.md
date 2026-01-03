@@ -1,6 +1,6 @@
 # Afner Sirait - Personal Portfolio Website
 
-Hey there! 👋 I'm Afner Sirait. This is my personal portfolio website where I showcase my journey in data engineering, DevOps, and analytics. Feel free to explore and reach out if you'd like to connect!
+This is my personal portfolio website where I showcase my journey in data engineering, DevOps, and analytics. Feel free to explore and reach out if you'd like to connect!
 
 ![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue?style=flat-square&logo=typescript)
