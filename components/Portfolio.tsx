@@ -109,15 +109,7 @@ const Portfolio = () => {
           image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
           tags: ["Python", "AWS Cost Explorer", "Terraform", "Lambda"],
           github: "https://github.com/afnersirait/cost-optimizer",
-        },
-        {
-          title: "Automated Disaster Recovery System",
-          description:
-            "Cross-region disaster recovery solution with automated failover, backup orchestration, and RTO/RPO monitoring. Includes regular DR testing automation.",
-          image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=600&fit=crop",
-          tags: ["AWS", "Terraform", "Lambda", "CloudFormation", "Python"],
-          github: "https://github.com/afnersirait/disaster-recovery",
-        },
+        }
       ],
     },
     {
