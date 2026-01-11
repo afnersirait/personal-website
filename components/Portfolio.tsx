@@ -52,7 +52,7 @@ const Portfolio = () => {
           title: "Customer Churn Prediction System",
           description:
             "Machine learning system predicting customer churn with 92% accuracy. Features automated feature engineering, model retraining pipeline, and explainable AI.",
-          image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+          image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=600&fit=crop",
           tags: ["Python", "XGBoost", "MLflow", "FastAPI", "PostgreSQL"],
           github: "https://github.com/afnersirait/churn-prediction",
         },
