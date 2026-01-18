@@ -52,7 +52,7 @@ const About = () => {
             <div className="space-y-6">
               <h3 className="text-2xl font-semibold">Who I Am</h3>
               <p className="text-muted-foreground leading-relaxed">
-                With over 2+ years of experience in software engineering (AI, Data, & DevOps), I specialize in
+                With over 3+ years of experience in Software Engineering (AI, Data, & DevOps), I specialize in
                 building modern, and reliable data analytics system. My journey
                 in tech started with a curiosity about how things work, which evolved
                 into a passion for creating solutions that make a difference.
