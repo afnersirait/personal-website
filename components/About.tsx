@@ -7,8 +7,8 @@ const About = () => {
   const features = [
     {
       icon: Code,
-      title: "DevOps",
-      description: "Ensuring smooth deployment, automation, and system reliability through CI/CD and scalable infrastructure.",
+      title: "DevSecOps",
+      description: "Ensuring smooth deployment, automation, security, and system reliability through CI/CD and scalable infrastructure.",
     },
     {
       icon: Palette,
@@ -43,7 +43,7 @@ const About = () => {
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-primary via-cyan-500 to-teal-500 mx-auto mb-6 rounded-full"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              I&apos;m a passionate engineer with a keen eye for data and a love for
+              I&apos;m a passionate engineer with a keen eye for reliable system & data and a love for
               creating impactful solutions.
             </p>
           </div>
@@ -52,8 +52,8 @@ const About = () => {
             <div className="space-y-6">
               <h3 className="text-2xl font-semibold">Who I Am</h3>
               <p className="text-muted-foreground leading-relaxed">
-                With over 3+ years of experience in Data and Software Engineering (AI, Data, & DevOps), I specialize in
-                building modern, and reliable data analytics system. My journey
+                With over 3+ years of experience in Data and Software Engineering (DevSecOps, AI & Data), I specialize in
+                building modern, and reliable systems. My journey
                 in tech started with a curiosity about how things work, which evolved
                 into a passion for creating solutions that make a difference.
               </p>

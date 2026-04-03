@@ -8,9 +8,25 @@ import DownloadResumeButton from "@/components/DownloadResumeButton";
 const Resume = () => {
   const experiences = [
     {
+      title: "DevSecOps Engineer",
+      company: "Feedloop.ai",
+      period: "Mar 2026 - Now",
+      description:
+        "Responsible for managing and optimizing cloud infrastructure and deployment workflows, ensuring system reliability, scalability, and security. Supported development teams through automation and CI/CD implementation to streamline product delivery and operational efficiency.",
+      achievements: [
+        "Implementation NGPAM (Next Generation Privileged Access Management) System using Delinea.",
+        "Enhancement NPAM (Network Privilege Access Management) System.",
+        "Troubleshot and resolved infrastructure and application issues to maintain system performance and stability.",
+        "Managed containerized applications using Docker and Kubernetes (GKE/EKS/AKS), ensuring high availability and scalability.",
+        "Collaborated with development teams to optimize build, test, and release workflows, improving deployment velocity.",
+        "Managed secrets and security policies, ensuring safe and compliant operations in production environments.",
+        "Designed, implemented, and maintained CI/CD pipelines using modern automation tools to enhance deployment efficiency.",
+      ],
+    },
+    {
       title: "AI & Data Analyst",
       company: "Feedloop.ai",
-      period: "Sep 2025 - Present",
+      period: "Sep 2025 - Mar 2026",
       description:
         "Responsible for designing data architecture, developing data pipelines, building data models, and performing analytical workflows to support data-driven decision-making. Ensure data quality, security, and compliance across data processes and systems.",
       achievements: [
