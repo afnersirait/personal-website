@@ -70,7 +70,7 @@ const About = () => {
               <div className="space-y-4">
                 <div>
                   <div className="flex justify-between mb-2">
-                    <span className="font-medium">Data Engineering and Analytics</span>
+                    <span className="font-medium">DevSecOps & Infrastructure</span>
                     <span className="text-muted-foreground">90%</span>
                   </div>
                   <div className="h-2 bg-secondary rounded-full overflow-hidden">
@@ -79,8 +79,8 @@ const About = () => {
                 </div>
                 <div>
                   <div className="flex justify-between mb-2">
-                    <span className="font-medium">DevSecOps & Infrastructure</span>
-                    <span className="text-muted-foreground">85%</span>
+                    <span className="font-medium">Data Engineering and Analytics</span>
+                    <span className="text-muted-foreground">90%</span>
                   </div>
                   <div className="h-2 bg-secondary rounded-full overflow-hidden">
                     <div className="h-full bg-primary w-[85%] rounded-full"></div>
