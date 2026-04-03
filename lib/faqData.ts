@@ -11,7 +11,7 @@ export const faqData: FAQItem[] = [
   {
     keywords: ["who", "about", "introduce", "yourself", "afner"],
     question: "Who is Afner Sirait?",
-    answer: "Afner Sirait is a Data & DevOps Engineer with 3+ years of experience in data architecture, ETL pipelines, analytics, and DevOps. He is an Engineering graduate from Universitas Gadjah Mada and currently works as an AI & Data Analyst at Feedloop.ai.",
+    answer: "Afner Sirait is a Data & DevSecOps Engineer with 3+ years of experience in Cloud, Infrastructure, Security, Data architecture, ETL pipelines, analytics, and DevOps. He is an Engineering graduate from Universitas Gadjah Mada and currently works as an DevSecOps Engineer at Feedloop.ai.",
     category: "about"
   },
   {
