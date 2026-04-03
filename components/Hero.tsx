@@ -38,7 +38,7 @@ const Hero = () => {
               />
             </h1>
             <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-muted-foreground">
-              Data and DevOps Engineer
+              DevSecOps & Data Engineer
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-2 sm:px-0">
               3+ years of experience in Data and Software Engineering (DevSecOps, Data Architecture, ETL pipelines, & Analytics). Engineering graduate from Universitas Gadjah Mada. 
