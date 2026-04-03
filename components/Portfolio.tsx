@@ -166,7 +166,7 @@ const Portfolio = () => {
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-primary via-cyan-500 to-teal-500 mx-auto mb-6 rounded-full"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A selection of my projects showcasing expertise across data, DevOps, cloud, and web development.
+              A selection of my projects showcasing expertise across DevSecOps, Data, Cloud, and Web Development.
             </p>
           </div>
 
