@@ -83,7 +83,7 @@ const About = () => {
                     <span className="text-muted-foreground">90%</span>
                   </div>
                   <div className="h-2 bg-secondary rounded-full overflow-hidden">
-                    <div className="h-full bg-primary w-[85%] rounded-full"></div>
+                    <div className="h-full bg-primary w-[90%] rounded-full"></div>
                   </div>
                 </div>
                 <div>
