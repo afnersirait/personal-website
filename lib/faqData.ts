@@ -31,7 +31,7 @@ export const faqData: FAQItem[] = [
   {
     keywords: ["skills", "expertise", "technology", "tech stack", "tools"],
     question: "What are Afner's technical skills?",
-    answer: "Afner specializes in:\n• Data Engineering & ETL pipelines\n• Data Architecture & Analytics\n• DevOps & Cloud Infrastructure\n• Python, SQL, and data processing tools\n• Kubernetes, Docker, CI/CD\n• Next.js, React, TypeScript for web development",
+    answer: "Afner specializes in:\n• Data Engineering & ETL pipelines\n• Data Architecture & Analytics\n• DevSecOps & Cloud Infrastructure\n• Python, SQL, and data processing tools\n• Kubernetes, Docker, CI/CD\n• Next.js, React, TypeScript for web development",
     category: "skills"
   },
   {

@@ -79,7 +79,7 @@ const About = () => {
                 </div>
                 <div>
                   <div className="flex justify-between mb-2">
-                    <span className="font-medium">DevOps & Infrastructure</span>
+                    <span className="font-medium">DevSecOps & Infrastructure</span>
                     <span className="text-muted-foreground">85%</span>
                   </div>
                   <div className="h-2 bg-secondary rounded-full overflow-hidden">

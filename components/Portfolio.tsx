@@ -60,7 +60,7 @@ const Portfolio = () => {
     },
     {
       id: "devops",
-      name: "DevOps & Automation",
+      name: "DevSecOps & Automation",
       icon: <Wrench className="h-5 w-5" />,
       projects: [
         {
